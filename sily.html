@@ -215,7 +215,7 @@
   <p>Obsah © Platforma pro minimální důstojnou mzdu, licence CC BY-NC 4.0.</p>
 </div></footer>
 <script>
-fetch("essentials.json").then(r=>r.json()).then(d=>{
+fetch("essentials.json?v=2").then(r=>r.json()).then(d=>{
  const R=d.rady,svg=document.getElementById("ix-chart"),W=800,H=340,L=44,B=300,T=16,Rr=780;
  const ys=R.flatMap(r=>[r.energie,r.bydleni,r.cpi]),mx=Math.ceil(Math.max(...ys)/20)*20;
  const x=i=>L+(Rr-L)*i/(R.length-1),y=v=>B-(B-T)*(v-100)/(mx-100);
