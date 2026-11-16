@@ -1,0 +1,127 @@
+{
+ "zaklad": "2010",
+ "rady": [
+  {
+   "rok": 2010,
+   "essentials": 100.0,
+   "zaklad": 100.0,
+   "hicp": 100.0
+  },
+  {
+   "rok": 2011,
+   "essentials": 103.1,
+   "zaklad": 104.4,
+   "hicp": 102.2
+  },
+  {
+   "rok": 2012,
+   "essentials": 108.2,
+   "zaklad": 111.1,
+   "hicp": 105.8
+  },
+  {
+   "rok": 2013,
+   "essentials": 110.2,
+   "zaklad": 114.3,
+   "hicp": 107.2
+  },
+  {
+   "rok": 2014,
+   "essentials": 110.1,
+   "zaklad": 114.3,
+   "hicp": 107.8
+  },
+  {
+   "rok": 2015,
+   "essentials": 109.9,
+   "zaklad": 114.7,
+   "hicp": 108.0
+  },
+  {
+   "rok": 2016,
+   "essentials": 110.2,
+   "zaklad": 114.8,
+   "hicp": 108.7
+  },
+  {
+   "rok": 2017,
+   "essentials": 112.8,
+   "zaklad": 117.8,
+   "hicp": 111.3
+  },
+  {
+   "rok": 2018,
+   "essentials": 114.8,
+   "zaklad": 120.1,
+   "hicp": 113.5
+  },
+  {
+   "rok": 2019,
+   "essentials": 118.4,
+   "zaklad": 124.9,
+   "hicp": 116.4
+  },
+  {
+   "rok": 2020,
+   "essentials": 122.0,
+   "zaklad": 129.5,
+   "hicp": 120.3
+  },
+  {
+   "rok": 2021,
+   "essentials": 124.0,
+   "zaklad": 130.4,
+   "hicp": 124.3
+  },
+  {
+   "rok": 2022,
+   "essentials": 141.4,
+   "zaklad": 149.5,
+   "hicp": 142.7
+  },
+  {
+   "rok": 2023,
+   "essentials": 161.3,
+   "zaklad": 174.5,
+   "hicp": 159.7
+  },
+  {
+   "rok": 2024,
+   "essentials": 166.1,
+   "zaklad": 179.6,
+   "hicp": 164.0
+  },
+  {
+   "rok": 2025,
+   "essentials": 170.1,
+   "zaklad": 184.4,
+   "hicp": 167.8
+  }
+ ],
+ "vahy_pct": {
+  "CP041": 26.9,
+  "CP045": 15.2,
+  "CP044": 2.7,
+  "CP01": 24.2,
+  "CP03": 3.6,
+  "CP07": 6.5,
+  "CP06": 5.1,
+  "CP08": 4.0,
+  "CP09": 11.8
+ },
+ "rocne_essentials": 3.61,
+ "rocne_zaklad": 4.16,
+ "rocne_hicp": 3.51,
+ "slozky_kumul": {
+  "CP041": 65.0,
+  "CP045": 120.4,
+  "CP044": 96.7,
+  "CP01": 81.9,
+  "CP03": 46.6,
+  "CP07": 37.2,
+  "CP06": 60.2,
+  "CP08": -19.9,
+  "CP09": 47.2,
+  "CP00": 67.8
+ }
+}

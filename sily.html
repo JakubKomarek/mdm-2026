@@ -43,7 +43,7 @@
 <body>
 <nav><div class="wrap">
   <a class="brand" href="index.html">Důstojná mzda</a>
-  <a href="#sok">Šok</a><a href="#renta">Renta</a><a href="#presun">Přesun</a><a href="#spolu">Jak se potkávají</a><a href="#mapa">Mapa rozpočtu</a><a href="index.html#media">Pro média</a>
+  <a href="#sok">Šok</a><a href="#renta">Renta</a><a href="#presun">Přesun</a><a href="#index">Index nezbytností</a><a href="#spolu">Jak se potkávají</a><a href="#mapa">Mapa rozpočtu</a><a href="index.html#media">Pro média</a>
 </div></nav>
 
 <section class="hero dark"><div class="wrap">
@@ -143,6 +143,21 @@
   </ul></div>
 </div></section>
 
+<section id="index"><div class="wrap">
+  <span class="kicker">Index nezbytností</span>
+  <h2>Nezbytnosti zdražují rychleji než všechno ostatní</h2>
+  <p class="lead">Oficiální inflace měří průměrný nákupní košík. Domácnosti s nízkými příjmy ale utrácejí hlavně za bydlení, energie a jídlo. Po vzoru amerického <a href="https://www.unitedforalice.org/essentials-index">ALICE Essentials Index</a> jsme spočítali, jak zdražuje koš důstojné mzdy.</p>
+  <div class="big3">
+    <div style="--c:var(--rent)"><b id="ix-zak">+84 %</b><span>nájem, energie, voda a jídlo od roku 2010</span></div>
+    <div style="--c:var(--muted)"><b id="ix-cpi">+68 %</b><span>ceny celkem (HICP) za stejné období</span></div>
+    <div style="--c:var(--shock)"><b>+120 %</b><span>elektřina, plyn a teplo</span></div>
+  </div>
+  <svg id="ix-chart" viewBox="0 0 800 340" style="width:100%;height:auto" role="img" aria-label="Vývoj indexu nezbytností a celkové inflace 2010–2025"></svg>
+  <div class="legend"><span><i style="background:var(--rent)"></i>Základní nezbytnosti (nájem, energie, voda, jídlo)</span><span><i style="background:var(--shift)"></i>Celý koš MDM</span><span><i style="background:var(--muted)"></i>Ceny celkem (HICP)</span></div>
+  <p>Celý koš důstojné mzdy zdražoval jen o málo rychleji než ceny celkem (3,6 % proti 3,5 % ročně), protože ho brzdí zlevňující telekomunikace a pomalejší doprava. Základní nezbytnosti, bez kterých se žít nedá, ale zdražovaly o 4,2 % ročně. Rozdíl se nahromadil hlavně v energetické krizi a od té doby se nevrátil.</p>
+  <p class="note">Váhy: rozpočet MDM 2025 bez úspor. Ceny: harmonizovaný index spotřebitelských cen, Eurostat (prc_hicp_aind), roční průměry 2010–2025. Index nájemného v HICP zahrnuje i starší a regulované smlouvy, takže růst tržních nájmů spíš podhodnocuje. Výpočet je v souboru <code>essentials.py</code>.</p>
+</div></section>
+
 <section id="spolu"><div class="wrap">
   <span class="kicker">Jak se síly potkávají</span>
   <h2>Příběh jedné faktury za elektřinu</h2>
@@ -153,6 +168,15 @@
     <div class="step" style="--c:var(--rent)"><b>Renta</b><p>Cenu elektřiny určuje nejdražší zdroj. Mimořádně vydělají i výrobci z uhlí, jádra a obnovitelných zdrojů, jejichž náklady skoro nevzrostly.</p></div>
     <div class="arr">→</div>
     <div class="step" style="--c:var(--shift)"><b>Přesun</b><p>Stát zavede cenové stropy a daň z mimořádných zisků. Náklad se částečně přesune zpět z domácností do společného rozpočtu.</p></div>
+  </div>
+  <div class="policy" style="margin-top:28px"><h3>Co ukazují česká data</h3>
+    <div class="big3" style="margin:12px 0">
+      <div style="--c:var(--rent)"><b>45 %</b><span>růstu spotřebitelských cen v letech 2022–23 připadá na domácí zisky</span></div>
+      <div style="--c:var(--shock)"><b>43 %</b><span>na dražší dovoz, hlavně energie</span></div>
+      <div style="--c:var(--shift)"><b>14 %</b><span>na mzdy</span></div>
+    </div>
+    <p>Zhruba třetina příspěvku zisků připadá na výrobce energie. Reálné mzdy jsou dnes asi o desetinu pod předkrizovým trendem: účet za krizi zaplatili hlavně zaměstnanci. Od roku 2024 se podíl zisků vrátil k normálu, renta v energetice byla krizová, ne trvalá. Trvalou rentou zůstávají nájmy.</p>
+    <p class="note">Rozklad deflátoru spotřeby podle metody MMF (Hansen, Toscani a Zhou 2023) na datech Eurostatu, 2022Q1–2023Q1. Jde o účetní rozklad, ne o kauzální odhad.</p>
   </div>
   <p style="margin-top:24px">Pointa: <strong>šok nelze ovlivnit, ale jak hluboko dopadne, je politická volba.</strong> Rozhoduje o tom, kdo ovládá klíčové trhy a kdo nakonec nese účet.</p>
 </div></section>
@@ -183,5 +207,20 @@
   <p>Literatura: I. Weber, E. Wasner (2023): <em>Sellers' inflation, profits and conflict: why can large firms hike prices in an emergency?</em> Review of Keynesian Economics. I. Weber a kol. (2024): <em>Inflation in Times of Overlapping Emergencies: Systemically Significant Prices from an Input–Output Perspective</em>. Data o cenách: ČSÚ.</p>
   <p>Obsah © Platforma pro minimální důstojnou mzdu, licence CC BY-NC 4.0.</p>
 </div></footer>
+<script>
+fetch("essentials.json").then(r=>r.json()).then(d=>{
+ const R=d.rady,svg=document.getElementById("ix-chart"),W=800,H=340,L=44,B=300,T=16,Rr=780;
+ const ys=R.flatMap(r=>[r.zaklad,r.essentials,r.hicp]),mx=Math.ceil(Math.max(...ys)/20)*20;
+ const x=i=>L+(Rr-L)*i/(R.length-1),y=v=>B-(B-T)*(v-100)/(mx-100);
+ let g="";for(let v=100;v<=mx;v+=20)g+=`<line x1="${L}" x2="${Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="var(--muted)">${v}</text>`;
+ R.forEach((r,i)=>{if(r.rok%5==0||i==R.length-1)g+=`<text x="${x(i)}" y="${B+22}" text-anchor="middle" font-size="12" fill="var(--muted)">${r.rok}</text>`});
+ const line=(k,c,w)=>`<polyline fill="none" stroke="var(--${c})" stroke-width="${w}" stroke-linejoin="round" points="${R.map((r,i)=>x(i)+","+y(r[k])).join(" ")}"/>`;
+ g+=line("hicp","muted",2.5)+line("essentials","shift",2.5)+line("zaklad","rent",4);
+ const l=R[R.length-1];g+=`<circle cx="${x(R.length-1)}" cy="${y(l.zaklad)}" r="5" fill="var(--rent)"/>`;
+ svg.innerHTML=g;
+ document.getElementById("ix-zak").textContent="+"+Math.round(l.zaklad-100)+" %";
+ document.getElementById("ix-cpi").textContent="+"+Math.round(l.hicp-100)+" %";
+}).catch(()=>{});
+</script>
 </body>
 </html>
