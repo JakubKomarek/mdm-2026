@@ -1,146 +1,123 @@
 {
- "zaklad": "2010",
+ "zdroj": "CSU CEN0101E (CPI, COICOP 2018)",
+ "zaklad_rok": 2015,
+ "mesice_2026": "01-10",
  "rady": [
   {
-   "rok": 2010,
+   "rok": 2015,
    "essentials": 100.0,
    "zaklad": 100.0,
-   "hicp": 100.0
-  },
-  {
-   "rok": 2011,
-   "essentials": 103.1,
-   "zaklad": 104.2,
-   "hicp": 102.2
-  },
-  {
-   "rok": 2012,
-   "essentials": 108.2,
-   "zaklad": 110.6,
-   "hicp": 105.8
-  },
-  {
-   "rok": 2013,
-   "essentials": 110.2,
-   "zaklad": 113.5,
-   "hicp": 107.2
-  },
-  {
-   "rok": 2014,
-   "essentials": 110.1,
-   "zaklad": 113.6,
-   "hicp": 107.8
-  },
-  {
-   "rok": 2015,
-   "essentials": 109.9,
-   "zaklad": 113.5,
-   "hicp": 108.0
+   "cpi": 100.0
   },
   {
    "rok": 2016,
-   "essentials": 110.2,
-   "zaklad": 113.5,
-   "hicp": 108.7
+   "essentials": 100.4,
+   "zaklad": 100.0,
+   "cpi": 100.6
   },
   {
    "rok": 2017,
-   "essentials": 112.8,
-   "zaklad": 116.5,
-   "hicp": 111.3
+   "essentials": 102.8,
+   "zaklad": 102.6,
+   "cpi": 103.1
   },
   {
    "rok": 2018,
-   "essentials": 114.8,
-   "zaklad": 118.9,
-   "hicp": 113.5
+   "essentials": 104.9,
+   "zaklad": 104.8,
+   "cpi": 105.3
   },
   {
    "rok": 2019,
-   "essentials": 118.4,
-   "zaklad": 123.3,
-   "hicp": 116.4
+   "essentials": 108.2,
+   "zaklad": 108.7,
+   "cpi": 108.3
   },
   {
    "rok": 2020,
-   "essentials": 122.0,
-   "zaklad": 127.5,
-   "hicp": 120.3
+   "essentials": 111.6,
+   "zaklad": 112.3,
+   "cpi": 111.8
   },
   {
    "rok": 2021,
-   "essentials": 124.0,
-   "zaklad": 129.1,
-   "hicp": 124.3
+   "essentials": 113.6,
+   "zaklad": 113.7,
+   "cpi": 116.1
   },
   {
    "rok": 2022,
-   "essentials": 141.4,
-   "zaklad": 148.5,
-   "hicp": 142.7
+   "essentials": 129.6,
+   "zaklad": 130.6,
+   "cpi": 133.5
   },
   {
    "rok": 2023,
-   "essentials": 161.3,
-   "zaklad": 171.2,
-   "hicp": 159.7
+   "essentials": 147.4,
+   "zaklad": 149.8,
+   "cpi": 147.8
   },
   {
    "rok": 2024,
-   "essentials": 166.1,
-   "zaklad": 176.0,
-   "hicp": 164.0
+   "essentials": 152.0,
+   "zaklad": 154.2,
+   "cpi": 151.4
   },
   {
    "rok": 2025,
-   "essentials": 170.1,
-   "zaklad": 180.3,
-   "hicp": 167.8
+   "essentials": 155.7,
+   "zaklad": 157.9,
+   "cpi": 155.1
   },
   {
    "rok": 2026,
-   "essentials": 170.9,
-   "zaklad": 180.5,
-   "hicp": 170.3,
-   "odhad": "leden-zari"
+   "essentials": 156.8,
+   "zaklad": 158.5,
+   "cpi": 158.2
   }
  ],
  "vahy_pct": {
-  "CP041": 26.9,
-  "CP045": 15.2,
-  "CP044": 2.7,
-  "CP01": 24.2,
-  "CP03": 3.6,
-  "CP07": 6.5,
-  "CP06": 5.1,
-  "CP08": 4.0,
-  "CP09": 11.8
+  "041": 26.9,
+  "045": 15.2,
+  "044": 2.7,
+  "01": 24.2,
+  "03": 3.6,
+  "07": 6.5,
+  "06": 5.1,
+  "08": 4.0,
+  "09": 11.8
  },
- "rocne_essentials": 3.61,
- "rocne_zaklad": 4.01,
- "rocne_hicp": 3.51,
- "slozky_kumul": {
-  "CP041": 65.0,
-  "CP045": 120.4,
-  "CP044": 96.7,
-  "CP01": 81.9,
-  "CP03": 46.6,
-  "CP07": 37.2,
-  "CP06": 60.2,
-  "CP08": -19.9,
-  "CP09": 47.2,
-  "CP00": 67.8
+ "rocne_2015_2025": {
+  "essentials": 4.53,
+  "zaklad": 4.67,
+  "cpi": 4.49
  },
- "zmeny_2026": {
-  "CP00": 1.5,
-  "CP01": -2.1,
-  "CP03": -2.7,
-  "CP041": 6.1,
-  "CP044": 3.5,
-  "CP045": -7.0,
-  "CP06": 3.8,
-  "CP07": 6.2,
-  "CP08": 2.4,
-  "CP09": 2.1
+ "slozky_kumul_2015_2025": {
+  "041": 48.3,
+  "045": 95.0,
+  "044": 56.7,
+  "01": 51.6,
+  "03": 46.0,
+  "07": 34.3,
+  "06": 53.4,
+  "08": -1.5,
+  "09": 65.2,
+  "0": 55.1,
+  "0722": 11.5,
+  "10": 49.5
+ },
+ "zmena_2026_pct": {
+  "041": 6.2,
+  "045": -6.8,
+  "044": 3.4,
+  "01": -2.1,
+  "03": -2.6,
+  "07": 6.8,
+  "06": 3.8,
+  "08": 2.4,
+  "09": 2.2,
+  "0": 2.0,
+  "0722": 17.4,
+  "10": 4.2
  }
 }
