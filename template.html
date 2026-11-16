@@ -169,7 +169,7 @@ const D=__DATA__;
 const MIN=22400;
 const L={bydleni:"Bydlení vč. energií",jidlo:"Jídlo",obleceni:"Oblečení a obuv",doprava:"Doprava",zdravi:"Zdraví a hygiena",telekom:"Telekomunikace",volny_cas:"Volný čas a vzdělávání",uspory:"Úspory a rezerva"};
 const C={bydleni:"#d7263d",jidlo:"#e8590c",obleceni:"#a6763f",doprava:"#f08c00",zdravi:"#2b8a3e",telekom:"#5f3dc4",volny_cas:"#1971c2",uspory:"#495057"};
-const F={bydleni:["rent","shock","shift"],jidlo:["shock","rent"],obleceni:[],doprava:["shock","shift"],zdravi:["shift"],telekom:["rent"],volny_cas:["shift"],uspory:["shift"]};
+const F={bydleni:["rent","shock","shift"],jidlo:["shock","rent"],obleceni:[],doprava:["shock","shift"],zdravi:["shift"],telekom:[],volny_cas:["shift"],uspory:["shift"]};
 const fmt=n=>Math.round(n).toLocaleString("cs-CZ")+" Kč";
 const r100=n=>fmt(Math.round(n/100)*100);
 const pct=p=>(p>0?"+":"")+p.toFixed(1).replace(".",",")+" %";

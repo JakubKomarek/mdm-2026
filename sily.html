@@ -128,7 +128,7 @@
     <div><h3>Jak to funguje</h3><ul>
       <li><strong>Důchody:</strong> čím méně spolehlivý se zdá veřejný důchod, tím víc se po lidech chce, aby si spořili sami. MDM s tím musí počítat, a proto obsahuje úspory na stáří.</li>
       <li><strong>Zdraví:</strong> doplatky za léky, placená péče a nadstandardy u zubaře, které se stávají standardem. Podíl plateb z kapsy na výdajích na zdraví se přitom od roku 2010 drží kolem 14 % (<a href="https://ec.europa.eu/eurostat/databrowser/view/hlth_sha11_hf/default/table">Eurostat</a>). Privatizace se tu neděje ve velkých číslech, ale uvnitř systému, a proto je těžko měřitelná.</li>
-      <li><strong>Vzdělání:</strong> chybí dostupné střední školy s všeobecným vzděláním, které připravují na budoucnost. V Praze tvořila v roce 2024 soukromá čtyřletá gymnázia 38 % nabízených míst a nárůst kapacit obstarali soukromí zřizovatelé. Na veřejné gymnázium bylo potřeba v průměru 88. percentilu, na soukromé stačil 67. (data CERMAT, <a href="https://www.paqresearch.cz/post/dvema-tretinam-zactva-staci-25-z-231-nejzadanejsi-stredoskolskych-oboru/">PAQ Research</a>). Kdo nemá na školné, potřebuje výrazně lepší výsledek. K tomu kroužky, doučování, pomůcky a tábory: formálně je škola zdarma, prakticky rodiny platí stále víc.</li>
+      <li><strong>Vzdělání a volný čas:</strong> chybí dostupné střední školy s všeobecným vzděláním, které připravují na budoucnost. V Praze tvořila v roce 2024 soukromá čtyřletá gymnázia 38 % nabízených míst a nárůst kapacit obstarali soukromí zřizovatelé. Na veřejné gymnázium bylo potřeba v průměru 88. percentilu, na soukromé stačil 67 (data CERMAT, <a href="https://www.paqresearch.cz/post/dvema-tretinam-zactva-staci-25-z-231-nejzadanejsi-stredoskolskych-oboru/">PAQ Research</a>). Kdo nemá na školné, potřebuje výrazně lepší výsledek. Rozpočet MDM navíc počítá s tím, že dítě chodí do kroužku, jede týden na tábor, na školní výlet a měsíčně na hodinu doučování. Podle ČSÚ zdražilo vzdělávání od roku 2021 o 31 % a rekreační služby o 44 % (ceny celkem o 34 %).</li>
       <li><strong>Péče:</strong> chybí místa ve školkách a domovech pro seniory a péči pak nesou rodiny, často ženy.</li>
     </ul></div>
     <div><h3>Funguje to i obráceně</h3>
@@ -145,20 +145,24 @@
 </div></section>
 
 <section id="index"><div class="wrap">
-  <span class="kicker">Energie a bydlení</span>
-  <h2>Energie utekly inflaci. Nájmy ji teď dohánějí.</h2>
-  <p class="lead">Oficiální inflace měří průměrný nákupní košík, ale energie a bydlení tvoří největší část rozpočtu důstojné mzdy. Podívali jsme se, jak se vyvíjely jejich ceny v indexu spotřebitelských cen ČSÚ, který sleduje i ČNB.</p>
+  <span class="kicker">Energie a nájmy</span>
+  <h2>Energie utekly inflaci. Nájmy ji teď předbíhají.</h2>
+  <p class="lead">Oficiální inflace měří průměrný nákupní košík, ale energie a bydlení tvoří největší část rozpočtu důstojné mzdy. Podívali jsme se, jak se vyvíjely jejich ceny v indexu spotřebitelských cen ČSÚ, který sleduje i ČNB, a porovnali je s tím, co platí lidé, kteří si byt hledají dnes.</p>
+  <div class="toggle" role="group" aria-label="Období"><button class="on" data-b="2015">Od roku 2015</button><button data-b="2021">Od roku 2021</button></div>
   <div class="big3">
-    <div style="--c:var(--shock)"><b>+95 %</b><span>energie: elektřina, plyn a teplo, 2015–2025</span></div>
-    <div style="--c:var(--rent)"><b>+49 %</b><span>bydlení bez energií: nájem, voda a služby, 2015–2025</span></div>
-    <div style="--c:var(--muted)"><b>+55,1 %</b><span>ceny celkem (CPI), 2015–2025</span></div>
+    <div style="--c:var(--shock)"><b id="t-en">+95 %</b><span>energie: elektřina, plyn a teplo, <span class="per">2015–2025</span></span></div>
+    <div style="--c:var(--rent)"><b id="t-by">+49 %</b><span>bydlení bez energií: nájem a voda, <span class="per">2015–2025</span></span></div>
+    <div style="--c:var(--muted)"><b id="t-cpi">+55 %</b><span>ceny celkem (CPI), <span class="per">2015–2025</span></span></div>
+    <div style="--c:var(--rent)"><b>+115 %</b><span>nabídkové nájmy bytů v Praze a krajských městech, 2014–2025 (<a href="https://www.deloitte.com/content/dam/assets-zone2/cz-sk/cs/docs/services/financial-advisory/real-estate/rent-index/2025-q3-cz-rent-index.pdf">Deloitte</a>)</span></div>
   </div>
-  <svg id="ix-chart" viewBox="0 0 800 340" style="width:100%;height:auto" role="img" aria-label="Vývoj cen energií, bydlení bez energií a celkové inflace 2015–2026"></svg>
-  <div class="legend"><span><i style="background:var(--shock)"></i>Energie</span><span><i style="background:var(--rent)"></i>Bydlení bez energií</span><span><i style="background:var(--muted)"></i>Ceny celkem (CPI)</span></div>
-  <p><strong>Energie</strong> zdražovaly o 6,91 % ročně, tedy o polovinu rychleji než ceny celkem (4,49 %). Skok přišel v letech 2022–23, v plynovém šoku. <strong>Bydlení bez energií</strong> rostlo v oficiálním indexu pomaleji než ceny celkem (4,08 % ročně), ale poslední roky se to mění: nájemné letos roste o 6,2 % a bydlení se průměru vyrovnalo.</p>
-  <p>Čísla o bydlení je ale potřeba číst opatrně. Index nájemného zahrnuje i starší a regulované smlouvy, takže tržní nájmy, z nichž vychází MDM, spíš podhodnocuje. Platforma pro MDM navíc uvádí, že právě bydlení žene důstojnou mzdu nahoru nejvíc ze všech položek: v roce 2025 o 1 000 až 1 300 Kč měsíčně (<a href="https://www.dustojnamzda.cz/wp-content/uploads/2026/05/TZ_MDM2025.pdf">tisková zpráva</a>).</p>
+  <svg id="ix-chart" viewBox="0 0 800 340" style="width:100%;height:auto" role="img" aria-label="Vývoj cen energií, bydlení bez energií a celkové inflace"></svg>
+  <div class="legend"><span><i style="background:var(--shock)"></i>Energie</span><span><i style="background:var(--rent)"></i>Bydlení bez energií (nájem a voda)</span><span><i style="background:var(--muted)"></i>Ceny celkem (CPI)</span></div>
+  <p><strong>Energie</strong> zdražily od roku 2015 o 95 % (6,9 % ročně), od roku 2021 dokonce o 81 %, zatímco ceny celkem o 34 %. Skok přišel v plynovém šoku 2022–23, od vrcholu v roce 2024 energie zlevňují.</p>
+  <p><strong>Nájemné</strong> v oficiálním indexu vzrostlo od roku 2015 o 48 %, tedy méně než ceny celkem (55 %). To je ale optický klam z let 2022–23, kdy inflace skočila na 15,1 % a 10,7 % a nájemné rostlo o 4,9 % a 7,1 %. Od roku 2024 je to naopak: nájemné v indexu roste o 6–7 % ročně, ceny celkem o 2,5 %.</p>
+  <p><strong>Proč to nestačí.</strong> Index nájemného ČSÚ zahrnuje nově uzavřené i stávající smlouvy a stávající nájmy rostou pomalu. Smlouvy se fixují na 1–2 roky a podle občanského zákoníku lze nájem zvýšit nejvýše o 20 % za tři roky (<a href="https://ct24.ceskatelevize.cz/clanek/domaci/najemni-bydleni-se-tyka-petiny-domacnosti-na-co-si-dat-pozor-373563">ČT24</a>). ČNB zjistila, že se tržní nájmy do indexu promítají se zpožděním pěti až osmi čtvrtletí (<a href="https://www.cnb.cz/cs/o_cnb/cnblog/Rust-cen-nemovitosti-a-jeho-dopad-do-spotrebitelske-inflace">ČNBlog, 2025</a>). Kdo hledá byt dnes, platí jiné ceny: Deloitte Rent Index, který sleduje realizované nabídky na realitních portálech, byl ve třetím čtvrtletí 2025 na 215 % úrovně roku 2014. Nájmy nabízené v Praze a krajských městech se tedy od té doby víc než zdvojnásobily, v Praze se platilo 456 Kč za m².</p>
+  <p class="note">Deloitte sleduje nabídky v Praze, krajských městech a Středočeském kraji, ne celý trh, a jiné zdroje se liší (Bezrealitky.cz uvádí na jaře 2026 růst o 13 % meziročně, podle téhož zdroje ČT24). Směr je ale stejný: nové nájmy rostou rychleji než oficiální index. Podle Platformy pro MDM žene právě bydlení důstojnou mzdu nahoru nejvíc ze všech položek, v roce 2025 o 1 000 až 1 300 Kč měsíčně (<a href="https://www.dustojnamzda.cz/wp-content/uploads/2026/05/TZ_MDM2025.pdf">tisková zpráva</a>).</p>
   <p><strong>Dva šoky za sebou.</strong> V letech 2022–23 přišel plynový šok. V roce 2026 přišel ropný šok: paliva za leden až říjen +17,4 % meziročně. Elektřina a plyn letos zlevnily (−6,8 %), protože část nákladů převzal stát. Úleva ale končí: dodavatelé ohlašují na rok 2027 zdražení, například Pražská plynárenská zvedá ceny elektřiny o 8,6 % a plynu o 8,7 % pro zákazníky bez fixace. Domácnosti tak příští rok čeká oboje: drahá paliva i dražší energie.</p>
-  <p class="note">Ceny: index spotřebitelských cen ČSÚ (COICOP 2018, otevřená data CEN0101E), roční průměry 2015–2025, rok 2026 leden–říjen; řady podle COICOP 2018 začínají rokem 2015. Bydlení bez energií je vážený průměr nájemného a vodného se službami podle rozpočtu MDM. Index celkových cen obsahuje i imputované nájemné vlastníků. Ceníky na rok 2027: Pražská plynárenská podle ČTK, 16. 11. 2026 (komerční prezentace). Výpočet je v souboru <code>essentials.py</code>.</p>
+  <p class="note">Ceny: index spotřebitelských cen ČSÚ (COICOP 2018, otevřená data CEN0101E), roční průměry 2015–2025, rok 2026 leden–říjen; řady podle COICOP 2018 začínají rokem 2015. Bydlení bez energií je vážený průměr nájemného a vodného se službami podle rozpočtu MDM. Ceníky na rok 2027: Pražská plynárenská podle ČTK, 16. 11. 2026 (komerční prezentace). Výpočet je v souboru <code>essentials.py</code>.</p>
 </div></section>
 
 <section id="spolu"><div class="wrap">
@@ -186,7 +190,6 @@
       <tr><td>Bydlení: energie</td><td>●</td><td>●</td><td>○</td><td style="text-align:left">plynová krize, ceny podle nejdražšího zdroje</td></tr>
       <tr><td>Jídlo</td><td>●</td><td>○</td><td></td><td style="text-align:left">komodity, energie ve výrobě</td></tr>
       <tr><td>Doprava</td><td>●</td><td></td><td>○</td><td style="text-align:left">paliva, rušení spojů na venkově</td></tr>
-      <tr><td>Telekomunikace</td><td></td><td></td><td></td><td style="text-align:left">ceny od roku 2015 stagnují (ČSÚ)</td></tr>
       <tr><td>Zdraví a hygiena</td><td></td><td></td><td>●</td><td style="text-align:left">doplatky, placená péče</td></tr>
       <tr><td>Volný čas a vzdělávání</td><td></td><td></td><td>●</td><td style="text-align:left">kroužky, tábory, doučování</td></tr>
       <tr><td>Úspory a rezerva</td><td></td><td></td><td>●</td><td style="text-align:left">spoření na stáří místo jistoty veřejného důchodu</td></tr>
@@ -202,17 +205,25 @@
   <p>Obsah © Platforma pro minimální důstojnou mzdu, licence CC BY-NC 4.0.</p>
 </div></footer>
 <script>
-fetch("essentials.json?v=2").then(r=>r.json()).then(d=>{
- const R=d.rady,svg=document.getElementById("ix-chart"),W=800,H=340,L=44,B=300,T=16,Rr=780;
- const ys=R.flatMap(r=>[r.energie,r.bydleni,r.cpi]),mx=Math.ceil(Math.max(...ys)/20)*20;
- const x=i=>L+(Rr-L)*i/(R.length-1),y=v=>B-(B-T)*(v-100)/(mx-100);
- let g="";for(let v=100;v<=mx;v+=20)g+=`<line x1="${L}" x2="${Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="var(--muted)">${v}</text>`;
- R.forEach((r,i)=>{if(r.rok%5==0||i==R.length-1)g+=`<text x="${x(i)}" y="${B+22}" text-anchor="middle" font-size="12" fill="var(--muted)">${r.rok}</text>`});
- const line=(k,c,w)=>`<polyline fill="none" stroke="var(--${c})" stroke-width="${w}" stroke-linejoin="round" points="${R.map((r,i)=>x(i)+","+y(r[k])).join(" ")}"/>`;
- g+=line("cpi","muted",2.5)+line("bydleni","rent",3.5)+line("energie","shock",3.5);
- const l=R[R.length-1];g+=`<circle cx="${x(R.length-1)}" cy="${y(l.energie)}" r="5" fill="var(--shock)"/><circle cx="${x(R.length-1)}" cy="${y(l.bydleni)}" r="5" fill="var(--rent)"/>`;
- svg.innerHTML=g;
- }).catch(()=>{});
+fetch("essentials.json?v=3").then(r=>r.json()).then(d=>{
+ const R=d.rady,svg=document.getElementById("ix-chart"),L=44,B=300,T=16,Rr=780;
+ function draw(base){
+  const b=R.find(r=>r.rok===base),Q=R.filter(r=>r.rok>=base),f=(r,k)=>100*r[k]/b[k];
+  const ys=Q.flatMap(r=>["energie","bydleni","cpi"].map(k=>f(r,k))),mx=Math.ceil(Math.max(...ys)/20)*20;
+  const x=i=>L+(Rr-L)*i/(Q.length-1),y=v=>B-(B-T)*(v-100)/(mx-100);
+  let g="";for(let v=100;v<=mx;v+=20)g+=`<line x1="${L}" x2="${Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="var(--muted)">${v}</text>`;
+  Q.forEach((r,i)=>{if(r.rok%(base===2015?5:1)==0||i==Q.length-1)g+=`<text x="${x(i)}" y="${B+22}" text-anchor="middle" font-size="12" fill="var(--muted)">${r.rok}</text>`});
+  const line=(k,c,w)=>`<polyline fill="none" stroke="var(--${c})" stroke-width="${w}" stroke-linejoin="round" points="${Q.map((r,i)=>x(i)+","+y(f(r,k))).join(" ")}"/>`;
+  g+=line("cpi","muted",2.5)+line("bydleni","rent",3.5)+line("energie","shock",3.5);
+  const l=Q[Q.length-1];g+=`<circle cx="${x(Q.length-1)}" cy="${y(f(l,"energie"))}" r="5" fill="var(--shock)"/><circle cx="${x(Q.length-1)}" cy="${y(f(l,"bydleni"))}" r="5" fill="var(--rent)"/>`;
+  svg.innerHTML=g;
+  const e=R.find(r=>r.rok===2025),p=k=>"+"+Math.round(100*e[k]/b[k]-100)+" %";
+  document.getElementById("t-en").textContent=p("energie");document.getElementById("t-by").textContent=p("bydleni");document.getElementById("t-cpi").textContent=p("cpi");
+  document.querySelectorAll(".per").forEach(x=>x.textContent=base+"–2025");
+ }
+ document.querySelectorAll("#index .toggle button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll("#index .toggle button").forEach(x=>x.classList.remove("on"));btn.classList.add("on");draw(+btn.dataset.b)});
+ draw(2015);
+}).catch(()=>{});
 </script>
 </body>
 </html>
