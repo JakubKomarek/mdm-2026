@@ -155,7 +155,7 @@
   <div class="big3">
     <div style="--c:var(--shock)"><b>+95 %</b><span>elektřina, plyn a teplo od roku 2015</span></div>
     <div style="--c:var(--muted)"><b id="ix-cpi">+55,1 %</b><span>ceny celkem (CPI) za stejné období</span></div>
-    <div style="--c:var(--rent)"><b id="ix-zak">+58 %</b><span>základní nezbytnosti: nájem, energie, voda, jídlo, doprava</span></div>
+    <div style="--c:var(--rent)"><b id="ix-zak">+58 %</b><span>základní nezbytnosti: nájem, energie, voda, jídlo, doprava (2015–2025)</span></div>
   </div>
   <svg id="ix-chart" viewBox="0 0 800 340" style="width:100%;height:auto" role="img" aria-label="Vývoj indexu nezbytností a inflace 2015–2026"></svg>
   <div class="legend"><span><i style="background:var(--rent)"></i>Základní nezbytnosti</span><span><i style="background:var(--shift)"></i>Celý koš MDM</span><span><i style="background:var(--muted)"></i>Ceny celkem (CPI)</span></div>
@@ -224,8 +224,8 @@ fetch("essentials.json").then(r=>r.json()).then(d=>{
  g+=line("cpi","muted",2.5)+line("essentials","shift",2.5)+line("zaklad","rent",4);
  const l=R[R.length-1];g+=`<circle cx="${x(R.length-1)}" cy="${y(l.zaklad)}" r="5" fill="var(--rent)"/>`;
  svg.innerHTML=g;
- document.getElementById("ix-zak").textContent="+"+Math.round(l.zaklad-100)+" %";
- document.getElementById("ix-cpi").textContent="+"+Math.round(l.cpi-100)+" %";
+ 
+ 
 }).catch(()=>{});
 </script>
 </body>
