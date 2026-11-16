@@ -18,49 +18,71 @@
 h3{font-size:24px;margin:1.6em 0 .4em}
 .tbl{margin:16px 0}
 td.l{text-align:left}
+.sb{display:flex;height:46px;border-radius:8px;overflow:hidden;margin:6px 0 14px}
+.sb div{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px;white-space:nowrap;overflow:hidden}
+.sbl{font-weight:700;font-size:15px}
+.hb{display:grid;grid-template-columns:minmax(120px,240px) 1fr;gap:10px;align-items:center;margin:8px 0;font-size:15px}
+.hb .t{background:var(--soft);border-radius:6px}.hb .t div{height:28px;border-radius:6px;background:var(--c)}
+.explain{background:var(--soft);border-radius:14px;padding:20px 22px;margin:24px 0}
+details.tech{border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:16px 0;background:var(--paper)}
+details.tech summary{font-size:18px}
+@media (max-width:560px){.hb{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <nav><div class="wrap">
   <a class="brand" href="index.html">Důstojná mzda</a>
-  <a href="#vysledky">Výsledky</a><a href="#cnb">Blog ČNB</a><a href="#metoda">Metoda</a><a href="sily.html">Šok, renta, přesun</a>
+  <a href="#zkratka">Ve zkratce</a><a href="#kde">Kde zisky vznikly</a><a href="#odbornici">Pro odborníky</a><a href="sily.html">Šok, renta, přesun</a>
 </div></nav>
 
 <section class="hero dark"><div class="wrap">
   <span class="kicker">Analýza · září 2026</span>
-  <h1 style="max-width:18ch">Česká inflace po energetickém šoku: dovoz, zisky a mzdy</h1>
-  <p class="lead">Kdo stál na druhé straně zdražování v letech 2022–23? Rozložili jsme českou inflaci stejnou metodou, jakou Mezinárodní měnový fond použil pro eurozónu.</p>
+  <h1 style="max-width:18ch">Kdo vydělal na zdražování 2022–23?</h1>
+  <p class="lead">Když v letech 2022 a 2023 rostly ceny, peníze, které lidé platili navíc, někam odtekly. Spočítali jsme kam: k zahraničním dodavatelům, do zisků firem, nebo do mezd.</p>
+</div></section>
+
+<section id="zkratka"><div class="wrap prose">
+  <span class="kicker">Ve zkratce</span>
+  <h2>Zdražování neplatily mzdy. Platili ho zaměstnanci.</h2>
+  <div class="explain"><p style="margin:0"><strong>Jak to číst:</strong> každá koruna, o kterou zdraží nákup, musí skončit v něčí kapse. Buď u zahraničního dodavatele (dražší dovoz plynu, ropy a dalších vstupů), nebo jako zisk české firmy, nebo jako vyšší mzda, nebo jako daň. My jsme spočítali, jak se o zdražení let 2022–23 tyto čtyři kapsy podělily.</p></div>
+  <p class="sbl">Česko</p>
+  <div class="sb"><div style="width:45%;background:var(--rent)">Zisky 45 %</div><div style="width:41%;background:var(--shock)">Dovoz 43 %</div><div style="width:14%;background:var(--shift)">Mzdy 14 %</div></div>
+  <p class="sbl">Eurozóna (pro srovnání, MMF)</p>
+  <div class="sb"><div style="width:43%;background:var(--rent)">Zisky ~45 %</div><div style="width:38%;background:var(--shock)">Dovoz ~40 %</div><div style="width:24%;background:var(--shift)">Mzdy ~25 %</div></div>
+  <p class="note">Podíly na růstu spotřebitelských cen, 2022Q1–2023Q1. Zbytek do 100 % tvoří daně, v Česku mírně záporné kvůli cenovým stropům na energie.</p>
+  <ul>
+    <li><strong>Téměř polovina zdražení skončila v ziscích českých firem</strong> a jen sedmina ve mzdách. V eurozóně připadla na mzdy čtvrtina.</li>
+    <li><strong>Zaměstnanci zaplatili účet:</strong> ceny jim utekly, mzdy ne. Jejich reálné příjmy jsou dnes asi o 10 % nižší, než kdyby rostly jako v letech 2010–19.</li>
+    <li><strong>Byla to krize, ne nový normál.</strong> Od roku 2024 zisky k inflaci přispívají málo a jejich podíl na ekonomice klesl pod průměr let 2015–19. Dnes zdražování táhnou hlavně mzdy, které dohánějí ztrátu.</li>
+  </ul>
+</div></section>
+
+<section id="kde"><div class="wrap prose">
+  <span class="kicker">Kde zisky vznikly</span>
+  <h2>Hlavně v energetice</h2>
+  <p>Zisky nerostly v továrnách, které vyrábějí na export. Rostly tam, kde se prodává českým domácnostem, a nejvíc u výrobců energie. Graf ukazuje, kolik procentních bodů inflace připadlo na zisky v jednotlivých odvětvích.</p>
+  <div class="hb" style="--c:var(--shock)"><span>Těžba a energetika</span><div class="t"><div style="width:100%"></div></div></div>
+  <div class="hb" style="--c:var(--muted)"><span>Nemovitosti*</span><div class="t"><div style="width:54%"></div></div></div>
+  <div class="hb" style="--c:var(--rent)"><span>Obchod, doprava, pohostinství</span><div class="t"><div style="width:39%"></div></div></div>
+  <div class="hb" style="--c:var(--muted)"><span>Veřejné služby*</span><div class="t"><div style="width:37%"></div></div></div>
+  <div class="hb" style="--c:var(--rent)"><span>Zemědělství</span><div class="t"><div style="width:26%"></div></div></div>
+  <div class="hb" style="--c:var(--rent)"><span>Průmysl</span><div class="t"><div style="width:13%"></div></div></div>
+  <p class="note">Energetika 1,7 p. b., nemovitosti 0,9, obchod 0,7, veřejné služby 0,6, zemědělství 0,5, průmysl 0,2. *U nemovitostí jde hlavně o tzv. imputované nájemné, tedy hodnotu bydlení ve vlastním bytě, a u veřejných služeb o odpisy. Ani jedno není rozhodnutí firem o cenách.</p>
+  <p>Zisky v energetice vzrostly do začátku roku 2023 zhruba na 2,5násobek úrovně roku 2019. Na ně mířila daň z mimořádných zisků zavedená v roce 2023.</p>
 </div></section>
 
 <section><div class="wrap prose">
-  <span class="kicker">Shrnutí</span>
-  <h2>Zdražování neplatily mzdy, platili ho zaměstnanci</h2>
-  <div class="big3">
-    <div style="--c:var(--rent)"><b>45 %</b><span>inflace spotřebitelských cen 2022–23 připadá na domácí zisky na jednotku produkce</span></div>
-    <div style="--c:var(--shock)"><b>43 %</b><span>na dražší dovoz, hlavně energie</span></div>
-    <div style="--c:var(--shift)"><b>14 %</b><span>na mzdové náklady (v eurozóně asi 25 %)</span></div>
-  </div>
-  <ul>
-    <li><strong>Hlavní protějšky inflace</strong> v letech 2022–23 byly dovozní ceny a domácí zisky na jednotku produkce, podobně jako v eurozóně. Mzdy hrály v Česku menší roli a ztrátu ze zhoršení směnných relací nesli hlavně zaměstnanci.</li>
-    <li><strong>Zisky byly v energetice a službách pro domácí trh,</strong> ne ve zpracovatelském průmyslu. Zhruba třetina příspěvku zisků připadá na výrobce energie.</li>
-    <li><strong>Reálné náhrady zaměstnanců</strong> jsou asi o 10 % pod trendem let 2010–19.</li>
-    <li><strong>Od poloviny roku 2023</strong> se obraz obrátil: největším protějškem inflace jsou znovu mzdy (1,9 p. b. proti 1,7 p. b. ze zisků) a podíl zisků klesl pod průměr let 2015–19.</li>
-  </ul>
-  <div class="tbl"><table>
-    <thead><tr><th>Deflátor spotřeby, průměr 2022Q1–2023Q1</th><th>Česko</th><th>Eurozóna (MMF)</th></tr></thead>
-    <tbody>
-      <tr><td>Inflace</td><td>11,3 %</td><td>~7 %</td></tr>
-      <tr><td>Dovozní ceny, podíl</td><td>43 %</td><td>~40 %</td></tr>
-      <tr><td>Domácí zisky, podíl</td><td>45 %</td><td>~45 %</td></tr>
-      <tr><td>Mzdové náklady, podíl</td><td>14 %</td><td>~25 %</td></tr>
-      <tr><td>Čisté daně, podíl</td><td>−2 %</td><td>mírně záporné</td></tr>
-    </tbody>
-  </table></div>
+  <span class="kicker">Co z toho plyne</span>
+  <h2>Pro důstojnou mzdu</h2>
+  <p>Krize let 2022–23 posunula náklady na důstojný život výš a mzdy to nedohnaly. Proto dnes 63 % zaměstnanců bere méně než minimální důstojnou mzdu. Šok přišel zvenku, ale jak hluboko dopadl, rozhodlo to, kdo měl tržní sílu přenést ho do cen, a kdo nakonec nesl účet.</p>
+  <p><a class="btn" href="sily.html">Šok, renta, přesun →</a></p>
 </div></section>
 
-<section id="vysledky"><div class="wrap prose">
-  <span class="kicker">Výsledky</span>
-  <h2>Kde zisky vznikly</h2>
+<section id="odbornici"><div class="wrap prose">
+  <span class="kicker">Pro odborníky</span>
+  <h2>Podrobné výsledky a metoda</h2>
+  <details class="tech"><summary>Podrobné tabulky</summary>
+  
 
   <h3>Deflátor HDP</h3>
   <p>Zisky na jednotku produkce byly hlavním protějškem vlny v letech 2022–23: z průměrných 9,1 % růstu deflátoru HDP na ně připadá 5,4 p. b. (60 %). Jednotkové mzdové náklady přidaly 2,5 p. b. a čisté daně 1,1 p. b. Od roku 2024 jsou největší složkou znovu mzdové náklady.</p>
@@ -118,11 +140,10 @@ td.l{text-align:left}
 
   <h3>Výhled</h3>
   <p>Při růstu produktivity 1,5 % a dovozní inflaci 2 % je s dvouprocentní inflací při dnešním podílu zisků slučitelný růst mezd zhruba 3,5 %. Mzdy rostou asi o 5,5 %, takže buď zpomalí, nebo podíl zisků na příjmech výrobních faktorů klesne zhruba na 50 % (z 52,1 %).</p>
-</div></section>
 
-<section id="cnb"><div class="wrap prose">
-  <span class="kicker">Diskuse</span>
-  <h2>Co tomu říká blog ČNB „Dobrý den, máte zisky?“</h2>
+
+</details>
+<details class="tech"><summary>Srovnání s blogem ČNB „Dobrý den, máte zisky?“</summary>
   <p>Blog Adama, Procházky a Schwarze (březen 2024) chápe inflaci jako konflikt o rozdělení po vnějším šoku a dochází k závěru, že slabé zisky průmyslu oslabily vyjednávací pozici zaměstnanců a mzdy proto zaostaly za cenami. Rámec sdílí s analýzou MMF a sektorová fakta sedí. Odpovídá ale na jinou otázku:</p>
   <ol>
     <li><strong>Celkové zisky místo zisků na jednotku.</strong> Pro inflaci jsou podstatné jednotkové marže. Ty tvoří asi 60 % růstu deflátoru HDP a 45 % deflátoru spotřeby.</li>
@@ -132,11 +153,8 @@ td.l{text-align:left}
     <li><strong>Směnné relace.</strong> Čistý dovozce energie musí ztratit národní důchod a strnulé mzdy znamenají, že první ránu nesou zaměstnanci. Tento kanál blog neodděluje od vyjednávání o zisky.</li>
   </ol>
   <p>Výhled blogu ale obstál: inflace se od roku 2024 drží kolem 2–3 % a podíl zisků klesl. Jiná práce ekonomů ČNB (Král a kol. 2024) je blíž čtení MMF a nachází nadprůměrný příspěvek jednotkových zisků a navýšení marží do poloviny roku 2023.</p>
-</div></section>
-
-<section id="metoda"><div class="wrap prose">
-  <span class="kicker">Metoda</span>
-  <h2>Jak jsme počítali</h2>
+</details>
+  <details class="tech"><summary>Jak jsme počítali a zdroje</summary>
   <p>Analýza replikuje pro Česko metodu Hansena, Toscaniho a Zhoua (2023, MMF WP/23/131) na čtvrtletních národních účtech Eurostatu za období 1995Q1–2026Q2.</p>
   <ul>
     <li><strong>Deflátor HDP:</strong> nominální HDP = náhrady zaměstnanců + hrubý provozní přebytek a smíšený důchod + čisté daně. Po vydělení reálným HDP dostaneme jednotkové mzdové náklady, jednotkové zisky a jednotkové čisté daně.</li>
@@ -151,6 +169,7 @@ td.l{text-align:left}
     <li>Král, Michálek, Musil a Šarboch (2024): <a href="https://www.cnb.cz/cs/o_cnb/cnblog/Zisky-ziskovost-mira-zisku-marze...-Kdo-se-v-tom-ma-vyznat/">Zisky, ziskovost, míra zisku, marže…</a>, ČNBlog</li>
     <li>OECD: <a href="https://data-explorer.oecd.org/?pg=0&amp;bp=true&amp;snb=15&amp;tm=TIVA">Trade in Value Added (TiVA) 2025</a></li>
   </ul>
+</details>
 </div></section>
 
 <footer><div class="wrap">
