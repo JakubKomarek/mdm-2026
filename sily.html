@@ -43,7 +43,7 @@
 <body>
 <nav><div class="wrap">
   <a class="brand" href="index.html">Důstojná mzda</a>
-  <a href="#sok">Šok</a><a href="#renta">Renta</a><a href="#presun">Přesun</a><a href="#index">Index nezbytností</a><a href="#spolu">Jak se potkávají</a><a href="#mapa">Mapa rozpočtu</a><a href="index.html#media">Pro média</a>
+  <a href="#sok">Šok</a><a href="#renta">Renta</a><a href="#presun">Přesun</a><a href="#index">Energie a bydlení</a><a href="#spolu">Jak se potkávají</a><a href="#mapa">Mapa rozpočtu</a><a href="index.html#media">Pro média</a>
 </div></nav>
 
 <section class="hero dark"><div class="wrap">
@@ -149,19 +149,20 @@
 </div></section>
 
 <section id="index"><div class="wrap">
-  <span class="kicker">Index nezbytností</span>
-  <h2>Kde se nůžky rozevřely: energie</h2>
-  <p class="lead">Oficiální inflace měří průměrný nákupní košík. Domácnosti s nízkými příjmy ale utrácejí hlavně za bydlení, energie a jídlo. Po vzoru amerického <a href="https://www.unitedforalice.org/essentials-index">ALICE Essentials Index</a> jsme spočítali, jak zdražuje koš důstojné mzdy, a porovnali ho s indexem spotřebitelských cen, který sleduje i ČNB.</p>
+  <span class="kicker">Energie a bydlení</span>
+  <h2>Energie utekly inflaci. Nájmy ji teď dohánějí.</h2>
+  <p class="lead">Oficiální inflace měří průměrný nákupní košík, ale energie a bydlení tvoří největší část rozpočtu důstojné mzdy. Podívali jsme se, jak se vyvíjely jejich ceny v indexu spotřebitelských cen ČSÚ, který sleduje i ČNB.</p>
   <div class="big3">
-    <div style="--c:var(--shock)"><b>+95 %</b><span>elektřina, plyn a teplo od roku 2015</span></div>
-    <div style="--c:var(--rent)"><b id="ix-zak">+65 %</b><span>bydlení a energie: nájem, energie, voda a služby</span></div>
-    <div style="--c:var(--muted)"><b id="ix-cpi">+55 %</b><span>ceny celkem (CPI), vše 2015–2025</span></div>
+    <div style="--c:var(--shock)"><b>+95 %</b><span>energie: elektřina, plyn a teplo, 2015–2025</span></div>
+    <div style="--c:var(--rent)"><b>+49 %</b><span>bydlení bez energií: nájem, voda a služby, 2015–2025</span></div>
+    <div style="--c:var(--muted)"><b>+55,1 %</b><span>ceny celkem (CPI), 2015–2025</span></div>
   </div>
-  <svg id="ix-chart" viewBox="0 0 800 340" style="width:100%;height:auto" role="img" aria-label="Vývoj indexu nezbytností a inflace 2015–2026"></svg>
-  <div class="legend"><span><i style="background:var(--rent)"></i>Bydlení a energie</span><span><i style="background:var(--shift)"></i>Celý koš MDM</span><span><i style="background:var(--muted)"></i>Ceny celkem (CPI)</span></div>
-  <p>Celý koš důstojné mzdy rostl od roku 2015 zhruba jako ceny celkem (4,5 % ročně), protože ho brzdí zlevňující telekomunikace a do roku 2025 i pomalu rostoucí paliva. Bydlení a energie ale zdražovaly o 5,1 % ročně a energie samotné téměř dvakrát víc než ceny celkem. Právě energie přinesly oba velké šoky a bydlení tvoří největší část rozpočtu.</p>
-  <p><strong>Dva šoky za sebou.</strong> V letech 2022–23 přišel plynový šok: elektřina, plyn a teplo. V roce 2026 přišel ropný šok: paliva za leden až říjen +17,4 % meziročně. Elektřina a plyn letos zlevnily (−6,8 %), protože část nákladů převzal stát. Úleva ale končí: dodavatelé ohlašují na rok 2027 zdražení, například Pražská plynárenská zvedá ceny elektřiny o 8,6 % a plynu o 8,7 % pro zákazníky bez fixace. Domácnosti tak příští rok čeká oboje: drahá paliva i dražší energie.</p>
-  <p class="note">Váhy: rozpočet MDM 2025 bez úspor. Ceny: index spotřebitelských cen ČSÚ (COICOP 2018, otevřená data CEN0101E), roční průměry 2015–2025, rok 2026 leden–říjen. Řady podle COICOP 2018 začínají rokem 2015. Index celkových cen obsahuje i imputované nájemné vlastníků, které rychle rostlo s cenami nemovitostí. Index nájemného zahrnuje i starší a regulované smlouvy, takže růst tržních nájmů, z nichž vychází MDM, spíš podhodnocuje. Ceníky na rok 2027: Pražská plynárenská podle ČTK, 16. 11. 2026. Výpočet je v souboru <code>essentials.py</code>.</p>
+  <svg id="ix-chart" viewBox="0 0 800 340" style="width:100%;height:auto" role="img" aria-label="Vývoj cen energií, bydlení bez energií a celkové inflace 2015–2026"></svg>
+  <div class="legend"><span><i style="background:var(--shock)"></i>Energie</span><span><i style="background:var(--rent)"></i>Bydlení bez energií</span><span><i style="background:var(--muted)"></i>Ceny celkem (CPI)</span></div>
+  <p><strong>Energie</strong> zdražovaly o 6,91 % ročně, tedy o polovinu rychleji než ceny celkem (4,49 %). Skok přišel v letech 2022–23, v plynovém šoku. <strong>Bydlení bez energií</strong> rostlo v oficiálním indexu pomaleji než ceny celkem (4,08 % ročně), ale poslední roky se to mění: nájemné letos roste o 6,2 % a bydlení se průměru vyrovnalo.</p>
+  <p>Čísla o bydlení je ale potřeba číst opatrně. Index nájemného zahrnuje i starší a regulované smlouvy, takže tržní nájmy, z nichž vychází MDM, spíš podhodnocuje. Platforma pro MDM navíc uvádí, že právě bydlení žene důstojnou mzdu nahoru nejvíc ze všech položek: v roce 2025 o 1 000 až 1 300 Kč měsíčně (<a href="https://www.dustojnamzda.cz/wp-content/uploads/2026/05/TZ_MDM2025.pdf">tisková zpráva</a>).</p>
+  <p><strong>Dva šoky za sebou.</strong> V letech 2022–23 přišel plynový šok. V roce 2026 přišel ropný šok: paliva za leden až říjen +17,4 % meziročně. Elektřina a plyn letos zlevnily (−6,8 %), protože část nákladů převzal stát. Úleva ale končí: dodavatelé ohlašují na rok 2027 zdražení, například Pražská plynárenská zvedá ceny elektřiny o 8,6 % a plynu o 8,7 % pro zákazníky bez fixace. Domácnosti tak příští rok čeká oboje: drahá paliva i dražší energie.</p>
+  <p class="note">Ceny: index spotřebitelských cen ČSÚ (COICOP 2018, otevřená data CEN0101E), roční průměry 2015–2025, rok 2026 leden–říjen; řady podle COICOP 2018 začínají rokem 2015. Bydlení bez energií je vážený průměr nájemného a vodného se službami podle rozpočtu MDM. Index celkových cen obsahuje i imputované nájemné vlastníků. Ceníky na rok 2027: Pražská plynárenská podle ČTK, 16. 11. 2026 (komerční prezentace). Výpočet je v souboru <code>essentials.py</code>.</p>
 </div></section>
 
 <section id="spolu"><div class="wrap">
@@ -216,17 +217,15 @@
 <script>
 fetch("essentials.json").then(r=>r.json()).then(d=>{
  const R=d.rady,svg=document.getElementById("ix-chart"),W=800,H=340,L=44,B=300,T=16,Rr=780;
- const ys=R.flatMap(r=>[r.zaklad,r.essentials,r.cpi]),mx=Math.ceil(Math.max(...ys)/20)*20;
+ const ys=R.flatMap(r=>[r.energie,r.bydleni,r.cpi]),mx=Math.ceil(Math.max(...ys)/20)*20;
  const x=i=>L+(Rr-L)*i/(R.length-1),y=v=>B-(B-T)*(v-100)/(mx-100);
  let g="";for(let v=100;v<=mx;v+=20)g+=`<line x1="${L}" x2="${Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="var(--muted)">${v}</text>`;
  R.forEach((r,i)=>{if(r.rok%5==0||i==R.length-1)g+=`<text x="${x(i)}" y="${B+22}" text-anchor="middle" font-size="12" fill="var(--muted)">${r.rok}</text>`});
  const line=(k,c,w)=>`<polyline fill="none" stroke="var(--${c})" stroke-width="${w}" stroke-linejoin="round" points="${R.map((r,i)=>x(i)+","+y(r[k])).join(" ")}"/>`;
- g+=line("cpi","muted",2.5)+line("essentials","shift",2.5)+line("zaklad","rent",4);
- const l=R[R.length-1];g+=`<circle cx="${x(R.length-1)}" cy="${y(l.zaklad)}" r="5" fill="var(--rent)"/>`;
+ g+=line("cpi","muted",2.5)+line("bydleni","rent",3.5)+line("energie","shock",3.5);
+ const l=R[R.length-1];g+=`<circle cx="${x(R.length-1)}" cy="${y(l.energie)}" r="5" fill="var(--shock)"/><circle cx="${x(R.length-1)}" cy="${y(l.bydleni)}" r="5" fill="var(--rent)"/>`;
  svg.innerHTML=g;
- 
- 
-}).catch(()=>{});
+ }).catch(()=>{});
 </script>
 </body>
 </html>

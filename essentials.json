@@ -5,106 +5,89 @@
  "rady": [
   {
    "rok": 2015,
-   "essentials": 100.0,
-   "zaklad": 100.0,
+   "energie": 100.0,
+   "bydleni": 100.0,
    "cpi": 100.0
   },
   {
    "rok": 2016,
-   "essentials": 100.4,
-   "zaklad": 100.7,
+   "energie": 99.5,
+   "bydleni": 101.3,
    "cpi": 100.6
   },
   {
    "rok": 2017,
-   "essentials": 102.8,
-   "zaklad": 101.8,
+   "energie": 98.8,
+   "bydleni": 103.3,
    "cpi": 103.1
   },
   {
    "rok": 2018,
-   "essentials": 104.9,
-   "zaklad": 104.4,
+   "energie": 100.9,
+   "bydleni": 106.2,
    "cpi": 105.3
   },
   {
    "rok": 2019,
-   "essentials": 108.2,
-   "zaklad": 109.3,
+   "energie": 107.9,
+   "bydleni": 110.0,
    "cpi": 108.3
   },
   {
    "rok": 2020,
-   "essentials": 111.6,
-   "zaklad": 112.7,
+   "energie": 111.2,
+   "bydleni": 113.5,
    "cpi": 111.8
   },
   {
    "rok": 2021,
-   "essentials": 113.6,
-   "zaklad": 113.4,
+   "energie": 107.7,
+   "bydleni": 116.4,
    "cpi": 116.1
   },
   {
    "rok": 2022,
-   "essentials": 129.6,
-   "zaklad": 128.5,
+   "energie": 140.9,
+   "bydleni": 122.1,
    "cpi": 133.5
   },
   {
    "rok": 2023,
-   "essentials": 147.4,
-   "zaklad": 152.7,
+   "energie": 193.4,
+   "bydleni": 131.8,
    "cpi": 147.8
   },
   {
    "rok": 2024,
-   "essentials": 152.0,
-   "zaklad": 161.6,
+   "energie": 201.9,
+   "bydleni": 140.9,
    "cpi": 151.4
   },
   {
    "rok": 2025,
-   "essentials": 155.7,
-   "zaklad": 164.7,
+   "energie": 195.0,
+   "bydleni": 149.1,
    "cpi": 155.1
   },
   {
    "rok": 2026,
-   "essentials": 156.8,
-   "zaklad": 166.1,
+   "energie": 181.8,
+   "bydleni": 157.9,
    "cpi": 158.2
   }
  ],
- "vahy_pct": {
-  "041": 26.9,
-  "045": 15.2,
-  "044": 2.7,
-  "01": 24.2,
-  "03": 3.6,
-  "07": 6.5,
-  "06": 5.1,
-  "08": 4.0,
-  "09": 11.8
- },
  "rocne_2015_2025": {
-  "essentials": 4.53,
-  "zaklad": 5.12,
+  "energie": 6.91,
+  "bydleni": 4.08,
   "cpi": 4.49
  },
- "slozky_kumul_2015_2025": {
-  "041": 48.3,
+ "kumul_2015_2025": {
   "045": 95.0,
+  "041": 48.3,
   "044": 56.7,
-  "01": 51.6,
-  "03": 46.0,
-  "07": 34.3,
-  "06": 53.4,
-  "08": -1.5,
-  "09": 65.2,
   "0": 55.1,
-  "0722": 11.5,
-  "10": 49.5
+  "10": 49.5,
+  "06": 53.4
  },
  "zmena_2026_pct": {
   "041": 6.2,

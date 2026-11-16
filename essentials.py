@@ -24,15 +24,17 @@ for k in CODES:  # 2026: rust leden-posledni mesic vs stejne mesice 2025
     A[k][2026] = A[k][2025] * avg(k, 2026) / avg(k, 2025, mon26)
 b = 2015; Y = sorted(A["0"])
 I = lambda k, y: 100*A[k][y]/A[k][b]
-rows = [{"rok": y, "essentials": round(sum(W[k]*I(k, y) for k in W), 1),
-         "zaklad": round(sum(W[k]*I(k, y) for k in Z)/zt, 1), "cpi": round(I("0", y), 1)} for y in Y]
+BYD = ["041", "044"]   # bydleni bez energii: najemne + voda a sluzby
+bt = sum(W[k] for k in BYD)
+rows = [{"rok": y, "energie": round(I("045", y), 1),
+         "bydleni": round(sum(W[k]*I(k, y) for k in BYD)/bt, 1), "cpi": round(I("0", y), 1)} for y in Y]
 n = 2025 - b
 g = lambda a, c: round(100*((a/c)**(1/n)-1), 2)
 r25 = next(r for r in rows if r["rok"] == 2025)
+r25 = next(r for r in rows if r["rok"] == 2025)
 out = {"zdroj": "CSU CEN0101E (CPI, COICOP 2018)", "zaklad_rok": b, "mesice_2026": f"01-{mon26[-1]}",
-       "rady": rows, "vahy_pct": {k: round(100*v, 1) for k, v in W.items()},
-       "rocne_2015_2025": {"essentials": g(r25["essentials"], 100), "zaklad": g(r25["zaklad"], 100), "cpi": g(r25["cpi"], 100)},
-       "slozky_kumul_2015_2025": {k: round(I(k, 2025)-100, 1) for k in CODES},
+       "rady": rows, "rocne_2015_2025": {"energie": g(r25["energie"], 100), "bydleni": g(r25["bydleni"], 100), "cpi": g(r25["cpi"], 100)},
+       "kumul_2015_2025": {k: round(I(k, 2025)-100, 1) for k in ["045", "041", "044", "0", "10", "06"]},
        "zmena_2026_pct": {k: round(100*(A[k][2026]/A[k][2025]-1), 1) for k in CODES}}
 json.dump(out, open("essentials.json", "w"), ensure_ascii=False, indent=1)
-print(json.dumps({k: v for k, v in out.items() if k != "rady"}, ensure_ascii=False, indent=1)); print(rows[-3:])
+print(json.dumps({k: v for k, v in out.items() if k != "rady"}, ensure_ascii=False, indent=1)); print(rows[-2:])
