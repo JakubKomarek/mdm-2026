@@ -3,119 +3,268 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Proč roste důstojná mzda</title>
-<meta name="description" content="Minimální důstojná mzda 2026: kolik potřebujeme na důstojný život a proč to číslo roste. Šok, renta, přesun.">
+<title>Minimální důstojná mzda 2026</title>
+<meta name="description" content="Kolik musí člověk vydělat na skromný, ale důstojný život? A proč ta částka roste? Odhad MDM 2026, data a podklady pro média.">
+<meta property="og:title" content="Důstojný život stojí 48 900 Kč hrubého">
+<meta property="og:description" content="Minimální důstojná mzda 2026: co zdražuje, kdo na tom vydělává a kdo to platí.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#faf7f2;--fg:#1d1d1b;--muted:#6b6760;--card:#fff;--line:#e6e0d6;
---shock:#d9480f;--rent:#7048e8;--shift:#1c7ed6;--ok:#2b8a3e}
-@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#f1efe9;--muted:#a19d95;--card:#1f1e1c;--line:#34322e;
---shock:#ff8a4c;--rent:#a58bff;--shift:#5fb0ff;--ok:#69db7c}}
+:root{--bg:#fbf8f3;--paper:#fff;--fg:#1a1a1a;--muted:#5f5b55;--line:#e7e1d7;
+--red:#d7263d;--red-ink:#a3162a;--shock:#e8590c;--rent:#d7263d;--shift:#1971c2;--ok:#2b8a3e;--soft:#f3ece2}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--paper:#1c1b1a;--fg:#f2efe9;--muted:#a8a39b;--line:#33302c;
+--red:#ff5468;--red-ink:#ff8090;--shock:#ff8a4c;--rent:#ff5468;--shift:#5fb0ff;--ok:#69db7c;--soft:#24221f}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Inter,system-ui,sans-serif}
-.wrap{max-width:920px;margin:0 auto;padding:0 16px}
-header{padding:72px 0 40px}
-.kicker{text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted);font-weight:600}
-h1{font-size:clamp(34px,6vw,58px);line-height:1.08;margin:.3em 0;font-weight:800}
-h2{font-size:clamp(24px,4vw,34px);line-height:1.2;margin:2.2em 0 .5em}
-.lead{font-size:20px;color:var(--muted);max-width:42em}
-.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:32px 0}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
-.stat b{display:block;font-size:40px;font-weight:800;line-height:1.1}
-.stat span{color:var(--muted);font-size:15px}
-.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.q{background:var(--card);border:1px solid var(--line);border-top:5px solid;border-radius:14px;padding:22px}
-.q h3{margin:.2em 0 .4em;font-size:22px}
-.q .tag{font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:20px;align-items:center;height:52px;overflow-x:auto;white-space:nowrap;font-size:14px;font-weight:600}
+nav a{text-decoration:none;color:var(--muted)} nav a:hover{color:var(--red)}
+nav .brand{color:var(--fg);font-weight:800;margin-right:auto}
+.serif{font-family:Fraunces,Georgia,serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1}
+h2{font-size:clamp(28px,4.5vw,42px);margin:0 0 .4em}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+.kicker{display:inline-block;text-transform:uppercase;letter-spacing:.1em;font-size:12px;font-weight:800;color:var(--red-ink)}
+.lead{font-size:20px;color:var(--muted);max-width:40em}
+/* hero */
+.hero{padding:56px 0 48px;background:var(--red);color:#fff;border:0}
+.hero .kicker{color:#ffd5da}
+.hero h1{font-size:clamp(38px,7vw,78px);margin:.15em 0 .3em;font-weight:900;max-width:14ch}
+.hero .lead{color:#ffe7ea}
+.hero-num{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:28px;align-items:flex-end}
+.hero-num b{display:block;font-family:Fraunces,serif;font-size:clamp(56px,10vw,104px);line-height:1;font-weight:900}
+.hero-num span{font-size:15px;color:#ffe7ea}
+/* gap chart */
+.gap{margin-top:36px;background:rgba(0,0,0,.14);border-radius:14px;padding:20px}
+.gap .row{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;margin:10px 0;font-size:15px}
+.gap .bar{height:30px;border-radius:6px;background:#fff;display:flex;align-items:center;padding:0 10px;color:var(--red-ink);font-weight:800;white-space:nowrap}
+.gap .bar.min{background:#ffb3bd}
+@media (max-width:560px){.gap .row{grid-template-columns:1fr}}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+.fact{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px}
+.fact b{display:block;font-family:Fraunces,serif;font-size:38px;line-height:1.1;color:var(--red-ink)}
+.fact p{margin:.4em 0 0;font-size:15px}
+.copy{margin-top:10px;font-size:13px;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer;font:inherit;font-size:13px}
+/* forces */
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:28px}
+.q{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;position:relative;overflow:hidden}
+.q:before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--c)}
+.q .ico{width:48px;height:48px;color:var(--c)}
+.q h3{font-size:26px;margin:.3em 0 .2em}
+.q .tag{font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--c)}
 .q p{margin:.5em 0;font-size:16px}
-.q .fix{border-top:1px dashed var(--line);padding-top:.6em;color:var(--muted);font-size:15px}
-.shock{border-top-color:var(--shock)}.shock .tag{color:var(--shock)}
-.rent{border-top-color:var(--rent)}.rent .tag{color:var(--rent)}
-.shift{border-top-color:var(--shift)}.shift .tag{color:var(--shift)}
-table{width:100%;border-collapse:collapse;font-size:16px;background:var(--card);border-radius:14px;overflow:hidden}
-th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right}
-th:first-child,td:first-child{text-align:left}
-th{font-size:13px;text-transform:uppercase;color:var(--muted);letter-spacing:.04em}
-.up{color:var(--shock);font-weight:600}.down{color:var(--ok);font-weight:600}
-.dots i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:3px}
-.tbl{overflow-x:auto}
-.toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:8px 0 16px}
+.q .fix{border-top:1px dashed var(--line);padding-top:.7em;color:var(--muted);font-size:15px}
+.shock{--c:var(--shock)}.rent{--c:var(--rent)}.shift{--c:var(--shift)}
+blockquote{margin:36px 0 0;padding:28px;background:var(--soft);border-radius:14px;font-family:Fraunces,serif;font-size:clamp(22px,3vw,30px);line-height:1.3}
+blockquote strong{color:var(--red-ink)}
+/* basket */
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:8px 0 20px}
 .toggle button{border:0;background:transparent;color:var(--fg);padding:8px 16px;font:inherit;font-size:15px;cursor:pointer}
 .toggle button.on{background:var(--fg);color:var(--bg)}
-blockquote{margin:1.5em 0;padding:1em 1.4em;border-left:5px solid var(--rent);background:var(--card);border-radius:0 12px 12px 0;font-size:19px}
+.stack{display:flex;height:56px;border-radius:10px;overflow:hidden;margin-bottom:8px}
+.stack div{display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700;overflow:hidden;white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted);margin-bottom:24px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+table{width:100%;border-collapse:collapse;font-size:15px;background:var(--paper)}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12px;text-transform:uppercase;color:var(--muted);letter-spacing:.05em}
+.up{color:var(--shock);font-weight:700}.down{color:var(--ok);font-weight:700}
+.dots i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-left:3px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+/* 2026 story */
+.story{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.story .q b{font-family:Fraunces,serif;font-size:52px;line-height:1;color:var(--c);display:block;margin:.1em 0}
+/* method */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 28px}
+.cats div{padding:14px 0;border-top:2px solid var(--fg)}
+.cats h3{font-family:Inter,sans-serif;font-size:16px;margin:0 0 .3em}
+.cats p{margin:0;font-size:15px;color:var(--muted)}
+details{border-top:1px solid var(--line);padding:14px 0}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin:.6em 0 0}
 .note{font-size:14px;color:var(--muted)}
-footer{margin:80px 0 40px;padding-top:24px;border-top:1px solid var(--line)}
+/* press */
+.press{background:var(--fg);color:var(--bg);border:0}
+.press h2,.press .kicker{color:var(--bg)} .press a{color:var(--bg)}
+.press .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:20px}
+.press .card{border:1px solid rgba(127,127,127,.4);border-radius:14px;padding:20px}
+.btn{display:inline-block;background:var(--red);color:#fff !important;text-decoration:none;font-weight:800;padding:10px 18px;border-radius:999px;margin:6px 6px 0 0}
+footer{padding:40px 0 56px;font-size:14px;color:var(--muted)}
+.support{display:flex;flex-wrap:wrap;gap:8px 32px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);margin-bottom:20px}
+.support b{color:var(--fg);font-size:18px}
 a{color:inherit}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <div class="kicker">Minimální důstojná mzda · odhad 2026</div>
-  <h1>Důstojný život nezdražuje sám od sebe.</h1>
-  <p class="lead">Kolik musí člověk vydělat, aby uživil sebe a dítě, bydlel v přiměřeném bytě a odložil si na horší časy? A proč ta částka roste? Odpověď nezní jen „inflace“. Jde o to, <strong>co zdražuje, kdo na tom vydělává a kdo to nakonec platí</strong>.</p>
-  <div class="big">
-    <div class="stat"><span>MDM 2026, hrubého měsíčně (odhad)</span><b id="g-mimo">48 900 Kč</b><span>mimo Prahu a Brno · 2025: 48 336 Kč</span></div>
-    <div class="stat"><span>Praha a Brno (odhad)</span><b id="g-praha">57 600 Kč</b><span>2025: 56 912 Kč</span></div>
-    <div class="stat"><span>Minimální mzda 2026</span><b>22 400 Kč</b><span>pokrývá méně než polovinu MDM</span></div>
+<nav><div class="wrap">
+  <a class="brand" href="#">Důstojná mzda</a>
+  <a href="#fakta">Fakta</a><a href="#proc">Proč roste</a><a href="#kos">Rozpočet</a><a href="#co-to-je">Co je MDM</a><a href="#vypocet">Výpočet</a><a href="#media">Pro média</a>
+</div></nav>
+
+<section class="hero"><div class="wrap">
+  <span class="kicker">Minimální důstojná mzda · odhad 2026</span>
+  <h1>Práce na plný úvazek má stačit na důstojný život.</h1>
+  <p class="lead">Kolik musí člověk vydělat, aby uživil sebe a dítě, bydlel v přiměřeném bytě a mohl si odložit na horší časy? Spočítali jsme to.</p>
+  <div class="hero-num">
+    <div><b id="h-mimo">48 900 Kč</b><span>hrubého měsíčně, mimo Prahu a Brno</span></div>
+    <div><b id="h-praha" style="font-size:clamp(36px,6vw,60px)">57 600 Kč</b><span>v Praze a Brně</span></div>
   </div>
-</header>
+  <div class="gap" aria-label="Srovnání minimální mzdy a MDM">
+    <div class="row"><span>Minimální mzda 2026</span><div class="bar min" id="b-min">22 400 Kč</div></div>
+    <div class="row"><span>Důstojná mzda 2026</span><div class="bar" style="width:100%" id="b-mdm">48 900 Kč</div></div>
+    <div class="row"><span></span><span id="b-gap" style="font-weight:800"></span></div>
+  </div>
+</div></section>
 
-<h2>Tři otázky za každou korunou</h2>
-<p>Každou položku důstojného rozpočtu, ať jde o nájem, elektřinu, jídlo, nebo dopravu, lze rozložit na tři síly. Překrývají se, ale každá vyžaduje jinou politickou odpověď.</p>
-<div class="trio">
-  <div class="q shock"><div class="tag">Šok</div><h3>Co zdražuje?</h3>
-    <p>Náhlé, často vnější tlaky: ceny paliv, plynu, potravin, klimatické výkyvy. V roce 2026 zdražily pohonné hmoty o více než třetinu.</p>
-    <p class="fix"><strong>Odpověď:</strong> stabilizace systémově významných cen, strategické zásoby, cenové stropy v krizi.</p></div>
-  <div class="q rent"><div class="tag">Renta</div><h3>Kdo na tom vydělává?</h3>
-    <p>Chronické tlaky tam, kde někdo drží nezbytnost: byty, sítě, energetiku, obchodní řetězce. Šok tržní sílu jen odhalí a znásobí, protože firmy s tržní silou ho přenesou do cen i s přirážkou.</p>
-    <p class="fix"><strong>Odpověď:</strong> dostupné a obecní bydlení, regulace sítí, veřejné vlastnictví, antimonopolní politika.</p></div>
-  <div class="q shift"><div class="tag">Přesun</div><h3>Kdo to platí?</h3>
-    <p>Cena se nemusí změnit vůbec. Stačí, aby se náklad přesunul ze společného rozpočtu do rodinného: připojištění na důchod, doplatky za léky, kroužky, péče.</p>
-    <p class="fix"><strong>Odpověď:</strong> kvalitní a dostupné veřejné služby jako součást „mzdy“.</p></div>
-</div>
+<section id="fakta"><div class="wrap">
+  <span class="kicker">Klíčová fakta</span>
+  <h2>Pět čísel do zprávy</h2>
+  <p class="lead">Všechna čísla můžete citovat se zdrojem „Platforma pro minimální důstojnou mzdu“. Odhad pro rok 2026 je orientační.</p>
+  <div class="facts" id="facts"></div>
+</div></section>
 
-<blockquote>Mezeru mezi mzdou a důstojným životem lze zavírat ze dvou stran: <strong>zvýšit mzdy</strong>, nebo <strong>zlevnit život</strong>. Druhá cesta je věcí veřejných politik.</blockquote>
+<section id="proc"><div class="wrap">
+  <span class="kicker">Proč důstojný život zdražuje</span>
+  <h2>Tři otázky za každou korunou</h2>
+  <p class="lead">Nejde jen o „inflaci“. Každou položku rozpočtu lze rozložit na tři síly. Každá potřebuje jinou politickou odpověď.</p>
+  <div class="trio">
+    <div class="q shock">
+      <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M27 4 9 28h14l-3 16 19-25H25z"/></svg>
+      <div class="tag">Šok</div><h3>Co zdražuje?</h3>
+      <p>Náhlé, často vnější tlaky: ceny paliv, plynu, potravin, klimatické výkyvy. V roce 2026 zdražily pohonné hmoty o více než třetinu.</p>
+      <p class="fix"><strong>Odpověď:</strong> stabilizace klíčových cen, strategické zásoby, cenové stropy v krizi.</p></div>
+    <div class="q rent">
+      <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M6 22 24 7l18 15v19H6z"/><circle cx="24" cy="28" r="6"/><path d="M24 25v6M22 27h4"/></svg>
+      <div class="tag">Renta</div><h3>Kdo na tom vydělává?</h3>
+      <p>Chronické tlaky tam, kde někdo drží nezbytnost: byty, sítě, energetiku, obchodní řetězce. Šok tržní sílu jen odhalí a znásobí, protože firmy s tržní silou ho přenesou do cen i s přirážkou.</p>
+      <p class="fix"><strong>Odpověď:</strong> dostupné a obecní bydlení, regulace sítí, veřejné vlastnictví, antimonopolní politika.</p></div>
+    <div class="q shift">
+      <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16h30l-7-7M42 32H12l7 7"/></svg>
+      <div class="tag">Přesun</div><h3>Kdo to platí?</h3>
+      <p>Cena se nemusí změnit vůbec. Stačí, aby se náklad přesunul ze společného rozpočtu do rodinného: připojištění na důchod, doplatky za léky, kroužky, péče.</p>
+      <p class="fix"><strong>Odpověď:</strong> kvalitní a dostupné veřejné služby jako součást „mzdy“.</p></div>
+  </div>
+  <blockquote>Mezeru mezi mzdou a důstojným životem lze zavírat ze dvou stran: <strong>zvýšit mzdy</strong>, nebo <strong>zlevnit život</strong>. Druhá cesta je věcí veřejných politik.</blockquote>
+</div></section>
 
-<h2>Rok 2026 v číslech</h2>
-<p>Měsíční rozpočet domácnosti (dospělý s dítětem), čistého. Barevné tečky ukazují, která síla v dané položce převažuje.</p>
-<div class="toggle" role="group" aria-label="Region">
-  <button class="on" data-r="mimo">Mimo Prahu a Brno</button><button data-r="praha">Praha a Brno</button>
-</div>
-<div class="tbl"><table>
-  <thead><tr><th>Položka</th><th>2025</th><th>2026 odhad</th><th>Změna</th><th>Síly</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table></div>
-<p class="note">Tečky: <span class="dots"><i style="background:var(--shock)"></i>šok <i style="background:var(--rent)"></i>renta <i style="background:var(--shift)"></i>přesun</span></p>
+<section><div class="wrap">
+  <span class="kicker">Rok 2026</span>
+  <h2>Co se letos stalo s cenami</h2>
+  <div class="story">
+    <div class="q rent"><div class="tag">Renta</div><b>+6,4 %</b><h3>Nájmy rostou pořád</h3><p>Nájemné roste zhruba dvaapůlkrát rychleji než ceny celkem. Bez šoku, bez krize: bydlení zdražuje kvůli tomu, komu byty patří a jak málo se jich staví pro bydlení, ne pro výnos.</p></div>
+    <div class="q shock"><div class="tag">Šok</div><b>+35,6 %</b><h3>Paliva vystřelila</h3><p>Lidé, kteří do práce dojíždějí autem, nemají kam uhnout. Kdo může jet veřejnou dopravou, je proti šoku chráněný.</p></div>
+    <div class="q shift"><div class="tag">Přesun obráceně</div><b>−10,3 %</b><h3>Elektřina zlevnila</h3><p>Mimo jiné proto, že část nákladů převzal státní rozpočet. Kolektivizace nákladu tedy důstojnou mzdu snižuje.</p></div>
+  </div>
+  <p class="note">Meziroční změna cen, říjen 2026, ČSÚ.</p>
+</div></section>
 
-<h2>Co nám rok 2026 říká</h2>
-<div class="trio">
-  <div class="q rent"><div class="tag">Renta</div><h3>Nájmy rostou pořád</h3><p>Nájemné meziročně +6,4 %, zhruba dvaapůlkrát rychleji než ceny celkem. Žádný šok, žádná krize: bydlení zdražuje kvůli tomu, komu byty patří a jak málo se jich staví pro bydlení, ne pro výnos.</p></div>
-  <div class="q shock"><div class="tag">Šok</div><h3>Paliva vystřelila</h3><p>Pohonné hmoty +35,6 %. Lidé dojíždějící autem nemají kam uhnout. Kdo může jet veřejnou dopravou, je proti šoku chráněný.</p></div>
-  <div class="q shift"><div class="tag">Přesun obráceně</div><h3>Elektřina zlevnila</h3><p>Elektřina −10,3 %. Mimo jiné proto, že část nákladů (poplatek za obnovitelné zdroje) převzal státní rozpočet. Přesně tak funguje přesun opačným směrem: kolektivizace nákladu snižuje MDM.</p></div>
-</div>
+<section id="kos"><div class="wrap">
+  <span class="kicker">Rozpočet</span>
+  <h2>Na co důstojná mzda padne</h2>
+  <p class="lead">Měsíční rozpočet pracujícího dospělého s dítětem, čistého. Barevné tečky ukazují, která síla v dané položce převažuje.</p>
+  <div class="toggle" role="group" aria-label="Region">
+    <button class="on" data-r="mimo">Mimo Prahu a Brno</button><button data-r="praha">Praha a Brno</button>
+  </div>
+  <div class="stack" id="stack"></div>
+  <div class="legend" id="legend"></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Položka</th><th>2025</th><th>2026 odhad</th><th>Změna</th><th>Síly</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+  <p class="note">Tečky: <span class="dots"><i style="background:var(--shock)"></i> šok <i style="background:var(--rent)"></i> renta <i style="background:var(--shift)"></i> přesun</span></p>
+</div></section>
 
-<h2>Jak jsme počítali</h2>
-<p>Vycházíme z rozpočtu, který <a href="https://www.dustojnamzda.cz/vypocet/">Platforma pro minimální důstojnou mzdu</a> zveřejnila za rok 2025. Každou položku jsme posunuli o meziroční změnu cen podle <a href="https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-rijen-2026">ČSÚ (říjen 2026)</a>. Čistou částku jsme přepočetli na hrubou podle daňových a pojistných pravidel 2026 (sleva na poplatníka a na jedno dítě). Výpočet zpětně sedí na zveřejněné hodnoty za rok 2025 s odchylkou do 20 Kč.</p>
-<p class="note"><strong>Jde o orientační odhad, ne o oficiální hodnotu Platformy.</strong> Předpoklady: nájem tvoří 60 % nákladů na bydlení; paliva tvoří 35 % dopravy; u zdraví (+3 %), telekomunikací (+1,5 %) a volného času (+3 %) jsme převzali přibližnou jádrovou inflaci. Úspory rostou úměrně s košem. Kompletní skript je v souboru <code>vypocet.py</code>.</p>
+<section id="co-to-je"><div class="wrap">
+  <span class="kicker">Co je MDM</span>
+  <h2>Mzda, ze které se dá skromně, ale důstojně žít</h2>
+  <p class="lead">Minimální důstojná mzda je výdělek za běžnou pracovní dobu, který pracujícím a jejich domácnostem zajistí základní životní standard, jaký většina společnosti považuje za přijatelný: jídlo, bydlení, oblečení, dopravu, zdraví, vzdělání, volný čas a úspory na nečekané výdaje.</p>
+  <div class="cats" style="margin-top:28px">
+    <div><h3>Průměrná a mediánová mzda</h3><p>Statistika toho, kolik lidé skutečně berou. Neříká nic o tom, co si za to koupí.</p></div>
+    <div><h3>Minimální mzda</h3><p>Výsledek politického vyjednávání odborů, zaměstnavatelů a státu. Neříká, zda pokryje důstojný život.</p></div>
+    <div><h3>Minimální důstojná mzda</h3><p>Odhad, kolik by lidé museli vydělat, aby pokryli náklady na základní materiální standard. Vychází z principu, že řádná práce má zajistit důstojný život.</p></div>
+    <div><h3>Životní minimum a chudoba</h3><p>Hranice přežití a materiální deprivace. MDM se dívá na prostor mezi chudobou a skromnou důstojností, kam padají i lidé pracující na plný úvazek.</p></div>
+  </div>
+  <p style="margin-top:28px">Koncept vychází z anglického <em>living wage</em>. Podobné výpočty existují ve Velké Británii (Living Wage Foundation, včetně certifikace zaměstnavatelů), v USA (MIT Living Wage Calculator), v Irsku, na Novém Zélandu a v Kanadě. Přehled nabízí například Eurofound (2018) nebo ILO (2011).</p>
+</div></section>
 
-<footer class="note">Pracovní verze, listopad 2026. Data: Platforma pro MDM, ČSÚ.</footer>
-</div>
+<section id="vypocet"><div class="wrap">
+  <span class="kicker">Metodika</span>
+  <h2>Jak se MDM počítá</h2>
+  <p class="lead">Odborné kulaté stoly určily osm kategorií výdajů a pro každou minimální standard. Náklady se odhadují z veřejných a pravidelně aktualizovaných zdrojů. Čistá částka se pak přepočte na hrubou mzdu včetně pojistného, slevy na poplatníka a daňového zvýhodnění na dítě. Model domácnosti: pracující dospělý s jedním závazkem, typicky péčí o dítě.</p>
+  <div class="cats">
+    <div><h3>Jídlo</h3><p>Výživová doporučení Společnosti pro výživu, ceny ČSÚ a e-shopů. Jídlo mimo domov (21 obědů měsíčně) podle cen poledních menu.</p></div>
+    <div><h3>Bydlení</h3><p>Nájem přiměřeného bytu včetně služeb a energií podle cenových map MF a EU-SILC, váženo počtem nájemních bytů. Zvlášť pro Prahu a Brno.</p></div>
+    <div><h3>Oblečení a obuv</h3><p>Medián výdajů pracujících domácností podle Statistiky rodinných účtů ČSÚ.</p></div>
+    <div><h3>Doprava</h3><p>Dojíždění do práce a školy, běžné cesty a provoz vozidel. Nezachycuje vyšší náklady v malých obcích.</p></div>
+    <div><h3>Telekomunikace</h3><p>Levný tarif s daty, předplacená karta pro dítě, pevný internet a poplatky veřejnoprávním médiím.</p></div>
+    <div><h3>Zdraví a hygiena</h3><p>Medián výdajů pracujících domácností (ČSÚ).</p></div>
+    <div><h3>Volný čas a vzdělávání</h3><p>Kultura a sport pro dospělého, kroužek a tábor pro dítě, školní výlet, doučování a 11 dní tuzemské dovolené.</p></div>
+    <div><h3>Úspory</h3><p>12 % mzdy: 5 % na nečekané výdaje (spotřebiče, nemoc), 7 % na stáří a pojištění.</p></div>
+  </div>
+  <details><summary>Jak vznikl odhad pro rok 2026</summary>
+    <p>Vycházíme z rozpočtu Platformy za rok 2025 (48 336 Kč, Praha a Brno 56 912 Kč). Každou položku jsme posunuli o meziroční změnu cen podle ČSÚ (říjen 2026) a přepočetli na hrubou mzdu podle pravidel 2026. Zpětně výpočet sedí na hodnoty 2025 s odchylkou do 20 Kč. Předpoklady: nájem tvoří 60 % nákladů na bydlení, paliva 35 % dopravy; u zdraví (+3 %), telekomunikací (+1,5 %) a volného času (+3 %) jsme převzali přibližnou jádrovou inflaci. Skript je v <a href="https://github.com/JakubKomarek/mdm-2026">repozitáři</a>.</p></details>
+  <details><summary>Proč model dospělého s dítětem?</summary>
+    <p>Náklady se během života mění. Mzda by je měla pokrýt ve chvíli, kdy nastanou, nebo umožnit si na ně předem našetřit. Závazkem může být i péče o rodiče nebo nemocného partnera.</p></details>
+  <details><summary>Je MDM návrh na novou minimální mzdu?</summary>
+    <p>Ne. MDM je měřítko, ne tarif. Ukazuje, jak velká je mezera mezi tím, co lidé berou, a tím, co potřebují. Zavírat ji lze vyššími mzdami i levnějším bydlením, energiemi a veřejnými službami.</p></details>
+</div></section>
+
+<section id="media" class="press"><div class="wrap">
+  <span class="kicker">Pro média</span>
+  <h2>Podklady a kontakty</h2>
+  <div class="grid">
+    <div class="card"><h3>Data</h3><p>Kompletní rozpočet 2025 a odhad 2026 ve strojově čitelné podobě. Grafy na této stránce můžete převzít s uvedením zdroje.</p>
+      <a class="btn" href="data.json" download>Stáhnout data (JSON)</a></div>
+    <div class="card"><h3>Kontakty</h3>
+      <p><strong>Lucie Trlifajová</strong><br>sociální antropoložka, Centrum SPOT / Sociologický ústav AV ČR<br><a href="mailto:lucie.trlifajova@centrumspot.cz">lucie.trlifajova@centrumspot.cz</a></p>
+      <p><strong>Kateřina Smejkalová</strong><br>politoložka, Friedrich-Ebert-Stiftung<br><a href="mailto:katerina.smejkalova@fes.de">katerina.smejkalova@fes.de</a></p></div>
+    <div class="card"><h3>Kdo za tím stojí</h3><p>Platforma pro minimální důstojnou mzdu je nezávislá odborná platforma, která se schází od roku 2016. Tvoří ji výzkumníci, odboráři a lidé z neziskových organizací a sociálních služeb.</p>
+      <a class="btn" href="https://www.dustojnamzda.cz/o-nas/">Seznam expertů</a></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="support"><span>Za podpory</span><b>Friedrich-Ebert-Stiftung, zastoupení v České republice</b></div>
+  <p>Partneři: Centrum pro společenské otázky SPOT, Ekumenická akademie, NaZemi, Trexima. Projekt v letech 2023–2025 podpořila Nadace OSF z programu Stronger Roots.</p>
+  <p>Obsah © Platforma pro minimální důstojnou mzdu, licence CC BY-NC 4.0. Data: Platforma pro MDM, ČSÚ. Odhad pro rok 2026 je orientační, nejde o oficiální výpočet Platformy.</p>
+</div></footer>
+
 <script>
-const L={bydleni:"Bydlení vč. energií",jidlo:"Jídlo",obleceni:"Oblečení a obuv",doprava:"Doprava",zdravi:"Zdraví a hygiena",telekom:"Telekomunikace",volny_cas:"Volný čas a vzdělávání",uspory:"Úspory a rezerva"};
-const F={bydleni:["rent","shock","shift"],jidlo:["shock","rent"],obleceni:[],doprava:["shock","shift"],zdravi:["shift"],telekom:["rent"],volny_cas:["shift"],uspory:["shift"]};
 const D={"mimo": {"kos2025": {"bydleni": 15342, "jidlo": 8286, "obleceni": 1247, "doprava": 2208, "zdravi": 1730, "telekom": 1378, "volny_cas": 4030, "uspory": 5082}, "kos2026": {"bydleni": 15598, "jidlo": 7955, "obleceni": 1203, "doprava": 2497, "zdravi": 1782, "telekom": 1399, "volny_cas": 4151, "uspory": 5136}, "cista2026": 39721, "hruba2025_check": 48319, "hruba2026": 48888}, "praha": {"kos2025": {"bydleni": 21392, "jidlo": 8530, "obleceni": 1247, "doprava": 2208, "zdravi": 1730, "telekom": 1378, "volny_cas": 4030, "uspory": 5082}, "kos2026": {"bydleni": 21749, "jidlo": 8189, "obleceni": 1203, "doprava": 2497, "zdravi": 1782, "telekom": 1399, "volny_cas": 4151, "uspory": 5139}, "cista2026": 46109, "hruba2025_check": 56894, "hruba2026": 57591}, "zmeny_pct": {"bydleni": 1.7, "jidlo": -4.0, "obleceni": -3.5, "doprava": 13.1, "zdravi": 3.0, "telekom": 1.5, "volny_cas": 3.0}};
-const fmt=n=>n.toLocaleString("cs-CZ")+" Kč";
+const MIN=22400;
+const L={bydleni:"Bydlení vč. energií",jidlo:"Jídlo",obleceni:"Oblečení a obuv",doprava:"Doprava",zdravi:"Zdraví a hygiena",telekom:"Telekomunikace",volny_cas:"Volný čas a vzdělávání",uspory:"Úspory a rezerva"};
+const C={bydleni:"#d7263d",jidlo:"#e8590c",obleceni:"#a6763f",doprava:"#f08c00",zdravi:"#2b8a3e",telekom:"#5f3dc4",volny_cas:"#1971c2",uspory:"#495057"};
+const F={bydleni:["rent","shock","shift"],jidlo:["shock","rent"],obleceni:[],doprava:["shock","shift"],zdravi:["shift"],telekom:["rent"],volny_cas:["shift"],uspory:["shift"]};
+const fmt=n=>Math.round(n).toLocaleString("cs-CZ")+" Kč";
+const r100=n=>fmt(Math.round(n/100)*100);
+const pct=p=>(p>0?"+":"")+p.toFixed(1).replace(".",",")+" %";
+const m=D.mimo, p=D.praha;
+document.getElementById("h-mimo").textContent=r100(m.hruba2026);
+document.getElementById("h-praha").textContent=r100(p.hruba2026);
+document.getElementById("b-mdm").textContent=r100(m.hruba2026);
+document.getElementById("b-min").style.width=(MIN/m.hruba2026*100)+"%";
+document.getElementById("b-gap").textContent="Minimální mzda pokryje jen "+Math.round(MIN/m.hruba2026*100)+" % důstojné mzdy.";
+const facts=[
+ [r100(m.hruba2026),"hrubého měsíčně potřebuje v roce 2026 pracující rodič s dítětem mimo Prahu a Brno na skromný, ale důstojný život (odhad)."],
+ [r100(p.hruba2026),"je důstojná mzda v Praze a Brně. Rozdíl dělá téměř výhradně bydlení."],
+ [Math.round(MIN/m.hruba2026*100)+" %","důstojné mzdy pokryje minimální mzda 22 400 Kč."],
+ [Math.round(m.kos2026.bydleni/m.cista2026*100)+" %","čistého rozpočtu padne na bydlení včetně energií, v Praze a Brně "+Math.round(p.kos2026.bydleni/p.cista2026*100)+" %."],
+ ["+6,4 %","meziročně vzrostlo nájemné (ČSÚ, říjen 2026), zhruba 2,5× rychleji než ceny celkem."]];
+document.getElementById("facts").innerHTML=facts.map(([b,t])=>`<div class="fact"><b>${b}</b><p>${t}</p><button class="copy" data-t="${b} ${t} (Platforma pro MDM)">Kopírovat</button></div>`).join("");
+document.querySelectorAll(".copy").forEach(x=>x.onclick=()=>{try{navigator.clipboard.writeText(x.dataset.t);x.textContent="Zkopírováno"}catch(e){}});
 function render(r){const d=D[r];let h="",a=0,b=0;
- for(const k in L){const x=d.kos2025[k],y=d.kos2026[k],p=(y/x-1)*100;a+=x;b+=y;
-  h+=`<tr><td>${L[k]}</td><td>${fmt(x)}</td><td>${fmt(y)}</td><td class="${p>0.05?'up':p<-0.05?'down':''}">${p>0?'+':''}${p.toFixed(1).replace('.',',')} %</td><td class="dots">${F[k].map(c=>`<i style="background:var(--${c})"></i>`).join("")}</td></tr>`}
- h+=`<tr><td><b>Čistý příjem celkem</b></td><td><b>${fmt(a)}</b></td><td><b>${fmt(b)}</b></td><td><b>+${((b/a-1)*100).toFixed(1).replace('.',',')} %</b></td><td></td></tr>`;
+ const tot=d.cista2026;
+ document.getElementById("stack").innerHTML=Object.keys(L).map(k=>{const w=d.kos2026[k]/tot*100;return `<div style="width:${w}%;background:${C[k]}" title="${L[k]}: ${fmt(d.kos2026[k])}">${w>9?Math.round(w)+" %":""}</div>`}).join("");
+ document.getElementById("legend").innerHTML=Object.keys(L).map(k=>`<span><i style="background:${C[k]}"></i>${L[k]}</span>`).join("");
+ for(const k in L){const x=d.kos2025[k],y=d.kos2026[k],q=(y/x-1)*100;a+=x;b+=y;
+  h+=`<tr><td>${L[k]}</td><td>${fmt(x)}</td><td>${fmt(y)}</td><td class="${q>0.05?'up':q<-0.05?'down':''}">${pct(q)}</td><td class="dots">${F[k].map(c=>`<i style="background:var(--${c})"></i>`).join("")}</td></tr>`}
+ h+=`<tr><td><b>Čistý příjem celkem</b></td><td><b>${fmt(a)}</b></td><td><b>${fmt(b)}</b></td><td><b>${pct((b/a-1)*100)}</b></td><td></td></tr>`;
+ h+=`<tr><td><b>Hrubá mzda</b></td><td><b>${fmt(r==="mimo"?48336:56912)}</b></td><td><b>${r100(d.hruba2026)}</b></td><td></td><td></td></tr>`;
  document.getElementById("rows").innerHTML=h}
 document.querySelectorAll(".toggle button").forEach(btn=>btn.onclick=()=>{document.querySelectorAll(".toggle button").forEach(x=>x.classList.remove("on"));btn.classList.add("on");render(btn.dataset.r)});
-const round=n=>fmt(Math.round(n/100)*100);
-document.getElementById("g-mimo").textContent=round(D.mimo.hruba2026);
-document.getElementById("g-praha").textContent=round(D.praha.hruba2026);
 render("mimo");
 </script>
 </body>
