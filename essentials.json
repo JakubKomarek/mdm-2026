@@ -12,67 +12,67 @@
   {
    "rok": 2016,
    "essentials": 100.4,
-   "zaklad": 100.0,
+   "zaklad": 100.7,
    "cpi": 100.6
   },
   {
    "rok": 2017,
    "essentials": 102.8,
-   "zaklad": 102.6,
+   "zaklad": 101.8,
    "cpi": 103.1
   },
   {
    "rok": 2018,
    "essentials": 104.9,
-   "zaklad": 104.8,
+   "zaklad": 104.4,
    "cpi": 105.3
   },
   {
    "rok": 2019,
    "essentials": 108.2,
-   "zaklad": 108.7,
+   "zaklad": 109.3,
    "cpi": 108.3
   },
   {
    "rok": 2020,
    "essentials": 111.6,
-   "zaklad": 112.3,
+   "zaklad": 112.7,
    "cpi": 111.8
   },
   {
    "rok": 2021,
    "essentials": 113.6,
-   "zaklad": 113.7,
+   "zaklad": 113.4,
    "cpi": 116.1
   },
   {
    "rok": 2022,
    "essentials": 129.6,
-   "zaklad": 130.6,
+   "zaklad": 128.5,
    "cpi": 133.5
   },
   {
    "rok": 2023,
    "essentials": 147.4,
-   "zaklad": 149.8,
+   "zaklad": 152.7,
    "cpi": 147.8
   },
   {
    "rok": 2024,
    "essentials": 152.0,
-   "zaklad": 154.2,
+   "zaklad": 161.6,
    "cpi": 151.4
   },
   {
    "rok": 2025,
    "essentials": 155.7,
-   "zaklad": 157.9,
+   "zaklad": 164.7,
    "cpi": 155.1
   },
   {
    "rok": 2026,
    "essentials": 156.8,
-   "zaklad": 158.5,
+   "zaklad": 166.1,
    "cpi": 158.2
   }
  ],
@@ -89,7 +89,7 @@
  },
  "rocne_2015_2025": {
   "essentials": 4.53,
-  "zaklad": 4.67,
+  "zaklad": 5.12,
   "cpi": 4.49
  },
  "slozky_kumul_2015_2025": {

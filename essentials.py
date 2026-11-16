@@ -12,7 +12,7 @@ for r in csv.DictReader(open("cpi_cz.csv", encoding="utf-8-sig")):
 W = {"041": 15342*.6, "045": 15342*.4*.85, "044": 15342*.4*.15, "01": 8286,
      "03": 1247, "07": 2208, "06": 1730, "08": 1378, "09": 4030}
 tot = sum(W.values()); W = {k: v/tot for k, v in W.items()}
-Z = ["041", "045", "044", "01", "07"]   # zakladni nezbytnosti
+Z = ["041", "045", "044"]   # bydleni a energie: najem, energie, voda a sluzby
 zt = sum(W[k] for k in Z)
 CODES = list(W) + ["0", "0722", "10"]
 mon26 = sorted(t[5:] for t in m["0"] if t.startswith("2026") and t[5:].isdigit())
