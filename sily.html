@@ -109,7 +109,7 @@
   <p class="pull">Renta nezdražuje jednorázově. Zdražuje každý rok, dokud se nezmění, komu co patří a podle jakých pravidel.</p>
   <div class="policy"><h3>Co s tím</h3><ul>
     <li>Dostupné bydlení: obecní a družstevní výstavba, zákon o podpoře bydlení, pravidla pro krátkodobé pronájmy a spekulativní nákupy.</li>
-    <li>Regulace přirozených monopolů (sítě, distribuce) a strategické využití státního vlastnictví v energetice: stát vlastní zhruba 70 % ČEZ.</li>
+    <li>Regulace přirozených monopolů (sítě, distribuce) a strategické využití státního vlastnictví v energetice.</li>
     <li>Silnější antimonopolní politika a lepší data o maržích, aby bylo možné rozlišit zdražování z nákladů od zdražování z tržní síly.</li>
     <li>Zdanění mimořádných zisků v době krize.</li>
   </ul></div>
@@ -161,7 +161,7 @@
   <p><strong>Nájemné</strong> v oficiálním indexu vzrostlo od roku 2015 o 48 %, tedy méně než ceny celkem (55 %). To je ale optický klam z let 2022–23, kdy inflace skočila na 15,1 % a 10,7 % a nájemné rostlo o 4,9 % a 7,1 %. Od roku 2024 je to naopak: nájemné v indexu roste o 6–7 % ročně, ceny celkem o 2,5 %.</p>
   <p><strong>Proč to nestačí.</strong> Index nájemného ČSÚ zahrnuje nově uzavřené i stávající smlouvy a stávající nájmy rostou pomalu. Smlouvy se fixují na 1–2 roky a podle občanského zákoníku lze nájem zvýšit nejvýše o 20 % za tři roky (<a href="https://ct24.ceskatelevize.cz/clanek/domaci/najemni-bydleni-se-tyka-petiny-domacnosti-na-co-si-dat-pozor-373563">ČT24</a>). ČNB zjistila, že se tržní nájmy do indexu promítají se zpožděním pěti až osmi čtvrtletí (<a href="https://www.cnb.cz/cs/o_cnb/cnblog/Rust-cen-nemovitosti-a-jeho-dopad-do-spotrebitelske-inflace">ČNBlog, 2025</a>). Kdo hledá byt dnes, platí jiné ceny: Deloitte Rent Index, který sleduje realizované nabídky na realitních portálech, byl ve třetím čtvrtletí 2025 na 215 % úrovně roku 2014. Nájmy nabízené v Praze a krajských městech se tedy od té doby víc než zdvojnásobily, v Praze se platilo 456 Kč za m².</p>
   <p class="note">Deloitte sleduje nabídky v Praze, krajských městech a Středočeském kraji, ne celý trh, a jiné zdroje se liší (Bezrealitky.cz uvádí na jaře 2026 růst o 13 % meziročně, podle téhož zdroje ČT24). Směr je ale stejný: nové nájmy rostou rychleji než oficiální index. Podle Platformy pro MDM žene právě bydlení důstojnou mzdu nahoru nejvíc ze všech položek, v roce 2025 o 1 000 až 1 300 Kč měsíčně (<a href="https://www.dustojnamzda.cz/wp-content/uploads/2026/05/TZ_MDM2025.pdf">tisková zpráva</a>).</p>
-  <p><strong>Dva šoky za sebou.</strong> V letech 2022–23 přišel plynový šok. V roce 2026 přišel ropný šok: paliva za leden až říjen +17,4 % meziročně. Elektřina a plyn letos zlevnily (−6,8 %), protože část nákladů převzal stát. Úleva ale končí: dodavatelé ohlašují na rok 2027 zdražení, například Pražská plynárenská zvedá ceny elektřiny o 8,6 % a plynu o 8,7 % pro zákazníky bez fixace. Domácnosti tak příští rok čeká oboje: drahá paliva i dražší energie.</p>
+  <p><strong>Dva šoky za sebou.</strong> V letech 2022–23 přišel plynový šok. V roce 2026 přišel ropný šok: paliva za leden až říjen +17,4 % meziročně. Elektřina a plyn letos zlevnily (−6,8 %), protože od ledna stát hradí poplatek na obnovitelné zdroje. Úleva ale končí: dodavatelé ohlašují na rok 2027 zdražení, například Pražská plynárenská zvedá ceny elektřiny o 8,6 % a plynu o 8,7 % pro zákazníky bez fixace. Domácnosti tak příští rok čeká oboje: drahá paliva i dražší energie.</p>
   <p class="note">Ceny: index spotřebitelských cen ČSÚ (COICOP 2018, otevřená data CEN0101E), roční průměry 2015–2025, rok 2026 leden–říjen; řady podle COICOP 2018 začínají rokem 2015. Bydlení bez energií je vážený průměr nájemného a vodného se službami podle rozpočtu MDM. Ceníky na rok 2027: Pražská plynárenská podle ČTK, 16. 11. 2026 (komerční prezentace). Výpočet je v souboru <code>essentials.py</code>.</p>
 </div></section>
 
@@ -174,7 +174,23 @@
     <div class="arr">→</div>
     <div class="step" style="--c:var(--rent)"><b>Renta</b><p>Cenu elektřiny určuje nejdražší zdroj. Mimořádně vydělají i výrobci z uhlí, jádra a obnovitelných zdrojů. Na výrobce energie připadá zhruba třetina příspěvku zisků k inflaci.</p></div>
     <div class="arr">→</div>
-    <div class="step" style="--c:var(--shift)"><b>Přesun</b><p>Stát zavede cenové stropy a daň z mimořádných zisků. Náklad se částečně přesune zpět z domácností do společného rozpočtu.</p></div>
+    <div class="step" style="--c:var(--shift)"><b>Přesun</b><p>Stát převzal část účtu: zastropoval ceny pro domácnosti a vybral daň z nadměrných zisků energetických firem. Jak se mu to povedlo, ukazuje rámeček níže.</p></div>
+  </div>
+  <div class="policy" style="margin-top:28px;background:var(--paper);border:1px solid var(--line)"><h3>Udělal stát, co měl? Napůl.</h3>
+    <p>Krizi utlumil a část zisků vybral zpět. Pomoc ale byla plošná a podstatnou část zdražení stejně zaplatili zaměstnanci.</p>
+    <div class="cols" style="margin-top:12px">
+      <div><h3>Co se podařilo</h3><ul>
+        <li><strong>Stropy cen uklidnily trh.</strong> Podle energetického experta EY Blahoslava Němečka splnily hlavní cíl, tedy jistotu pro domácnosti a firmy. Kompenzace dodavatelům vyšla zhruba na 50 mld. Kč, tedy přibližně na polovinu původních odhadů (<a href="https://www.irozhlas.cz/ekonomika/elektrina-energetika-cez-ceny-trh_2312051730_fos">iROZHLAS, 2023</a>).</li>
+        <li><strong>Daň z nadměrných zisků</strong> vybrala v letech 2023–25 zhruba 120 mld. Kč, z toho 93 mld. Kč zaplatil ČEZ (<a href="https://ekonomickydenik.cz/kdo-zaplatil-na-windfall-tax-nejvic/">Ekonomický deník, 2026</a>).</li>
+        <li><strong>Od roku 2026 hradí stát poplatek na obnovitelné zdroje</strong> v plné výši, zhruba 41 mld. Kč ročně, z toho 17 mld. Kč navíc proti dřívějšku. Podle ministra Havlíčka tak cena elektřiny klesla o deset procent (<a href="https://oenergetice.cz/energetika-v-cr/elektrina-ma-dal-zlevnit-stat-opet-uhradi-veskere-poplatky-za-poze">ČTK, 2026</a>).</li>
+      </ul></div>
+      <div><h3>Co nefungovalo</h3><ul>
+        <li><strong>Pomoc byla plošná.</strong> Stropy i zrušení poplatku platí pro všechny, bez ohledu na příjem. Domácnost, která potřebuje pomoc nejvíc, dostane stejnou sazbu jako ta, která ji nepotřebuje.</li>
+        <li><strong>Stropy podle Němečka zpomalily pokles cen:</strong> zastropovaná cena se stala „spravedlivou“ hladinou a dodavatelé neměli důvod nabízet nižší.</li>
+        <li><strong>Daň se z části vrátila do cen.</strong> U společnosti ČEPS to bylo 12,5 mld. Kč, které Energetický regulační úřad započetl do regulované ceny elektřiny, takže je nakonec zaplatili spotřebitelé.</li>
+        <li><strong>Zdražení stejně dopadlo.</strong> Inflace v letech 2022 a 2023 dosáhla 15,1 % a 10,7 % a zaměstnanci to zaplatili nižšími reálnými příjmy (<a href="analyza.html">naše analýza</a>).</li>
+      </ul></div>
+    </div>
   </div>
   <p style="margin-top:24px">Pointa: <strong>šok nelze ovlivnit, ale jak hluboko dopadne, je politická volba.</strong> Rozhoduje o tom, kdo ovládá klíčové trhy a kdo nakonec nese účet. V letech 2022–23 ho nesli hlavně zaměstnanci (<a href="analyza.html">celá analýza</a>).</p>
 </div></section>
