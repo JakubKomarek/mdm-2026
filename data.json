@@ -1,0 +1,61 @@
+{
+ "mimo": {
+  "kos2025": {
+   "bydleni": 15342,
+   "jidlo": 8286,
+   "obleceni": 1247,
+   "doprava": 2208,
+   "zdravi": 1730,
+   "telekom": 1378,
+   "volny_cas": 4030,
+   "uspory": 5082
+  },
+  "kos2026": {
+   "bydleni": 15598,
+   "jidlo": 7955,
+   "obleceni": 1203,
+   "doprava": 2497,
+   "zdravi": 1782,
+   "telekom": 1399,
+   "volny_cas": 4151,
+   "uspory": 5136
+  },
+  "cista2026": 39721,
+  "hruba2025_check": 48319,
+  "hruba2026": 48888
+ },
+ "praha": {
+  "kos2025": {
+   "bydleni": 21392,
+   "jidlo": 8530,
+   "obleceni": 1247,
+   "doprava": 2208,
+   "zdravi": 1730,
+   "telekom": 1378,
+   "volny_cas": 4030,
+   "uspory": 5082
+  },
+  "kos2026": {
+   "bydleni": 21749,
+   "jidlo": 8189,
+   "obleceni": 1203,
+   "doprava": 2497,
+   "zdravi": 1782,
+   "telekom": 1399,
+   "volny_cas": 4151,
+   "uspory": 5139
+  },
+  "cista2026": 46109,
+  "hruba2025_check": 56894,
+  "hruba2026": 57591
+ },
+ "zmeny_pct": {
+  "bydleni": 1.7,
+  "jidlo": -4.0,
+  "obleceni": -3.5,
+  "doprava": 13.1,
+  "zdravi": 3.0,
+  "telekom": 1.5,
+  "volny_cas": 3.0
+ }
+}
